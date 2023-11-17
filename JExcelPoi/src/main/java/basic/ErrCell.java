@@ -1,15 +1,6 @@
 package basic;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.IndexedColors;
-import org.apache.poi.ss.usermodel.FillPatternType;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.Comment;
-
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellReference;
 import org.apache.poi.xssf.usermodel.XSSFClientAnchor;
 import org.apache.poi.xssf.usermodel.XSSFRichTextString;
@@ -18,12 +9,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Scanner;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
+import java.util.Scanner;
 
-public class NegativeCell {
-    private static final Logger logger = System.getLogger("NegativeCell");
+public class ErrCell {
+    private static final Logger logger = System.getLogger("ErrCell");
     private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -48,10 +39,9 @@ public class NegativeCell {
             Sheet sheet = workbook.getSheet(sheetName);
 
             // Create worksheet
-            Sheet newSheet = workbook.createSheet("NEG");
+            Sheet newSheet = workbook.createSheet("Err");
 
-            // Get Negative. Example: A2 to E46
-
+            // Get Decimal. Example: A2 to E46
             System.out.print("Row:\n  First: ");
             int firstRow = scan.nextInt();
             System.out.print("  Last: ");
@@ -62,7 +52,7 @@ public class NegativeCell {
             System.out.print("  Last: ");
             int lastCol = scan.nextInt();
 
-            System.out.println(MAGENTA + "Found" + RESET + " Negative: ");
+            System.out.println(MAGENTA + "Found" + RESET + " ERROR: ");
             System.out.println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET);
 
             // Cell to place title
@@ -72,7 +62,7 @@ public class NegativeCell {
             Cell titleCell = titleRow.createCell(1);
             titleCell.setCellValue("Cell");
             Cell titleValue = titleRow.createCell(2);
-            titleValue.setCellValue("Negative");
+            titleValue.setCellValue("Error");
 
             int rowIndex = 1, no = 0;
             for (int rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
@@ -81,18 +71,19 @@ public class NegativeCell {
                     Cell cell = row.getCell(colIdx);
 
                     // Check Decimal Value
-                    if (cell != null && cell.getCellType() == CellType.NUMERIC) {
-                        double cellValue = cell.getNumericCellValue();
-                        if (cellValue < 0) {
+                    if (cell != null && cell.getCellType() == CellType.FORMULA) {
+                        String cellValue = cell.getCellFormula();
+
+                        if (cell.getCachedFormulaResultType() == CellType.ERROR) {
 
                             Comment comment = sheet.createDrawingPatriarch().createCellComment(
                                     new XSSFClientAnchor(0, 0, 0, 0,
                                             (short) colIdx, rowIdx, (short) (colIdx + 1), rowIdx + 1));
-                            comment.setString(new XSSFRichTextString("Negative: " + cellValue));
+                            comment.setString(new XSSFRichTextString("Error: " + cellValue));
                             cell.setCellComment(comment);
 
                             CellStyle style = workbook.createCellStyle();
-                            style.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+                            style.setFillForegroundColor(IndexedColors.LIGHT_GREEN.getIndex());
                             style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
                             cell.setCellStyle(style);
 
@@ -114,7 +105,7 @@ public class NegativeCell {
             }
 
             // Save excel file
-            FileOutputStream outputStream = new FileOutputStream("./src/main/java/output/Neg.xlsx");
+            FileOutputStream outputStream = new FileOutputStream("./src/main/java/output/Err.xlsx");
             workbook.write(outputStream);
 
             // Close excel file

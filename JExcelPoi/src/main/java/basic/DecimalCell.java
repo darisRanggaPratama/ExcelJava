@@ -18,12 +18,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Scanner;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
+import java.util.Scanner;
 
-public class NegativeCell {
-    private static final Logger logger = System.getLogger("NegativeCell");
+public class DecimalCell {
+    private static final Logger logger = System.getLogger("DecimalCell");
     private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -48,10 +48,9 @@ public class NegativeCell {
             Sheet sheet = workbook.getSheet(sheetName);
 
             // Create worksheet
-            Sheet newSheet = workbook.createSheet("NEG");
+            Sheet newSheet = workbook.createSheet("DEC");
 
-            // Get Negative. Example: A2 to E46
-
+            // Get Decimal. Example: A2 to E46
             System.out.print("Row:\n  First: ");
             int firstRow = scan.nextInt();
             System.out.print("  Last: ");
@@ -62,7 +61,7 @@ public class NegativeCell {
             System.out.print("  Last: ");
             int lastCol = scan.nextInt();
 
-            System.out.println(MAGENTA + "Found" + RESET + " Negative: ");
+            System.out.println(MAGENTA + "Found" + RESET + " DECIMAL: ");
             System.out.println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET);
 
             // Cell to place title
@@ -72,7 +71,7 @@ public class NegativeCell {
             Cell titleCell = titleRow.createCell(1);
             titleCell.setCellValue("Cell");
             Cell titleValue = titleRow.createCell(2);
-            titleValue.setCellValue("Negative");
+            titleValue.setCellValue("Decimal");
 
             int rowIndex = 1, no = 0;
             for (int rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
@@ -83,16 +82,17 @@ public class NegativeCell {
                     // Check Decimal Value
                     if (cell != null && cell.getCellType() == CellType.NUMERIC) {
                         double cellValue = cell.getNumericCellValue();
-                        if (cellValue < 0) {
+                        int intValue = (int) cellValue;
+                        if (cellValue != intValue) {
 
                             Comment comment = sheet.createDrawingPatriarch().createCellComment(
                                     new XSSFClientAnchor(0, 0, 0, 0,
                                             (short) colIdx, rowIdx, (short) (colIdx + 1), rowIdx + 1));
-                            comment.setString(new XSSFRichTextString("Negative: " + cellValue));
+                            comment.setString(new XSSFRichTextString("Decimal: " + cellValue));
                             cell.setCellComment(comment);
 
                             CellStyle style = workbook.createCellStyle();
-                            style.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+                            style.setFillForegroundColor(IndexedColors.LIGHT_GREEN.getIndex());
                             style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
                             cell.setCellStyle(style);
 
@@ -114,7 +114,7 @@ public class NegativeCell {
             }
 
             // Save excel file
-            FileOutputStream outputStream = new FileOutputStream("./src/main/java/output/Neg.xlsx");
+            FileOutputStream outputStream = new FileOutputStream("./src/main/java/output/Dec.xlsx");
             workbook.write(outputStream);
 
             // Close excel file

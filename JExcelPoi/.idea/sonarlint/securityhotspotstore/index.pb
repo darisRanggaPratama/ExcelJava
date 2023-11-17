@@ -11,5 +11,13 @@ P
  src/main/java/basic/DecCell.java,f\3\f3b23ac26df61d7bc3d932ec86b48af438c9ae50
 V
 &src/main/java/basic/NegativeCells.java,7\a\7a63ff5d56770d9085ee5866c8a0e52479b15206
-W
-'src/main/java/basic/NegativeCellss.java,9\c\9cfbc85ba587add923719b54e0d8b6bb211f16e4
+Q
+!src/main/java/basic/NegCells.java,4\b\4ba485e6e756a3299f856f8663f75793fc28a356
+T
+$src/main/java/basic/DecimalCell.java,1\0\100e2607afd2fd168a473dd369e4f8545ff183b9
+P
+ src/main/java/basic/ErrCell.java,e\a\ea6d3d75cd88e9d00010f6b19393f0f03e8ec5ae
+R
+"src/main/java/basic/ErrorCell.java,4\f\4ff17d72c2e560c6e2278a7a2eb44806dc4f2bf7
+Q
+!src/main/java/basic/ErrCells.java,8\3\837ef120dc28de6cbde2366ed1cd1240bf3b0b9e

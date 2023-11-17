@@ -66,7 +66,7 @@ public class DecCell {
                     Cell cell = row.getCell(colIdx);
 
                     // Check Decimal Value
-                    if (cell != null && cell.getCellType() == CellType.NUMERIC) {
+                    if (cell != null && (cell.getCellType() == CellType.NUMERIC)) {
                         double cellValue = cell.getNumericCellValue();
                         int intVal = (int) cellValue;
                         if (cellValue != intVal) {

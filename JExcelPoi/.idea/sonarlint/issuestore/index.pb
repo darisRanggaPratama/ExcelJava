@@ -9,3 +9,7 @@ U
 %src/main/java/basic/NegativeCell.java,6\9\69918d1aafed03571fde12ce8fe7b4220612843b
 P
  src/main/java/basic/DecCell.java,f\3\f3b23ac26df61d7bc3d932ec86b48af438c9ae50
+V
+&src/main/java/basic/NegativeCells.java,7\a\7a63ff5d56770d9085ee5866c8a0e52479b15206
+W
+'src/main/java/basic/NegativeCellss.java,9\c\9cfbc85ba587add923719b54e0d8b6bb211f16e4

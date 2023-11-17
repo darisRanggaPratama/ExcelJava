@@ -2,6 +2,9 @@ package basic;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -10,6 +13,7 @@ import org.apache.poi.ss.util.CellReference;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
 import java.lang.System.Logger;
@@ -20,6 +24,7 @@ public class NegativeCell {
     private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+        // COLOR
         String BLUE = "\u001B[34m";
         String RESET = "\u001B[0m";
         String RED = "\u001B[31m";
@@ -28,22 +33,22 @@ public class NegativeCell {
         String CYAN = "\u001B[46m";
 
         try {
-            // Menentukan path file Excel
+            // Get Excel file path
             System.out.println("File Name:");
             String name = scan.nextLine();
             String path = "./src/main/java/trial/";
             String excelFilePath = path + name;
 
-            // Membuka file Excel
+            // Open file
             FileInputStream inputStream = new FileInputStream(excelFilePath);
             Workbook workbook = new XSSFWorkbook(inputStream);
 
-            // Mendapatkan sheet pertama (GAJI)
+            // Get worksheet (GAJI)
             System.out.println("Sheet Name:");
             String sheetName = scan.nextLine();
             Sheet sheet = workbook.getSheet(sheetName);
 
-            // Mengecek angka negatif dalam rentang kolom 1-6, baris 2-45
+            // Get Negative. Example: A2 to E46
             int x = 0;
 
             System.out.print("Row:\n  First: ");
@@ -58,16 +63,21 @@ public class NegativeCell {
 
             System.out.println(MAGENTA + "Found" + RESET + " Negative: ");
             System.out.println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET);
-            // Example: A2 to E46
+
             for (int rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
                 Row row = sheet.getRow(rowIdx);
                 for (int colIdx = firstCol; colIdx <= lastCol; colIdx++) {
                     Cell cell = row.getCell(colIdx);
 
-                    // Mengecek apakah nilai di sel adalah angka negatif
+                    // Check Decimal Value
                     if (cell != null && cell.getCellType() == CellType.NUMERIC) {
                         double cellValue = cell.getNumericCellValue();
                         if (cellValue < 0) {
+                            CellStyle style = workbook.createCellStyle();
+                            style.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+                            style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+                            cell.setCellStyle(style);
+
                             String cellAddress = CellReference.convertNumToColString(colIdx) + (rowIdx + 1);
                             x++;
                             System.out.println(x + RESET + " " + BLUE + cellAddress + ": " + RESET + RED + cellValue + RESET);
@@ -76,10 +86,15 @@ public class NegativeCell {
                 }
             }
 
-            // Menutup file Excel
+            // Save excel file
+            FileOutputStream outputStream = new FileOutputStream("./src/main/java/output/Neg.xlsx");
+            workbook.write(outputStream);
+
+            // Close excel file
             workbook.close();
             scan.close();
             inputStream.close();
+            outputStream.close();
         } catch (IOException e) {
             String noFile = "File not found: \n" + e;
             logger.log(Level.ERROR, noFile);

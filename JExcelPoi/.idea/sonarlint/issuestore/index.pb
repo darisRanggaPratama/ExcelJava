@@ -9,8 +9,6 @@ U
 %src/main/java/basic/NegativeCell.java,6\9\69918d1aafed03571fde12ce8fe7b4220612843b
 P
  src/main/java/basic/DecCell.java,f\3\f3b23ac26df61d7bc3d932ec86b48af438c9ae50
-V
-&src/main/java/basic/NegativeCells.java,7\a\7a63ff5d56770d9085ee5866c8a0e52479b15206
 Q
 !src/main/java/basic/NegCells.java,4\b\4ba485e6e756a3299f856f8663f75793fc28a356
 T
@@ -21,3 +19,7 @@ R
 "src/main/java/basic/ErrorCell.java,4\f\4ff17d72c2e560c6e2278a7a2eb44806dc4f2bf7
 Q
 !src/main/java/basic/ErrCells.java,8\3\837ef120dc28de6cbde2366ed1cd1240bf3b0b9e
+Q
+!src/main/java/basic/ZeroCell.java,f\8\f844a0b2f83a3b49eb28bb1f264bdb7d67ba75d2
+Q
+!src/main/java/basic/NullCell.java,4\7\472775a9eb4a7b0ec0b157686951302d9f127462

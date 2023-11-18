@@ -1,0 +1,32 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8üóœ…¾1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8ıóœ…¾1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8ıóœ…¾1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68ıóœ…¾1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68ıóœ…¾1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68ıóœ…¾1
+j
+java:S2095!"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(õ°•ì8ÒîÃ…¾1
+l
+java:S2095""JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8ÒîÃ…¾1
+f
+java:S2583H"DChange this condition so that it does not always evaluate to "false"(ù£»Óÿÿÿÿÿ8Ã¨Å…¾1
+Y
+java:S1854"7Remove this useless assignment to local variable "RED".(ğÅÚ¢ûÿÿÿÿ8ôœ…¾1
+d
+java:S1659"BDeclare "RESET" and all following declarations on a separate line.(ğÅÚ¢ûÿÿÿÿ8ôœ…¾1
+_
+java:S1659"CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68ôœ…¾1
+J
+java:S1481"(Remove this unused "RED" local variable.(ğÅÚ¢ûÿÿÿÿ8ôœ…¾1
+a
+java:S1659A"?Declare "no" and all following declarations on a separate line.(øÁ´–úÿÿÿÿ8‘ôœ…¾1
+L	java:S106"+Replace this use of System.out by a logger.(ÄÜÔ˜üÿÿÿÿ8’ôœ…¾1
+F	java:S106%"+Replace this use of System.out by a logger.(ÅçY8¤ôœ…¾1
+G	java:S106-"+Replace this use of System.out by a logger.(Ãì„É8¥ôœ…¾1
+G	java:S106/"+Replace this use of System.out by a logger.(ŒÑœë8¦ôœ…¾1
+F	java:S1062"+Replace this use of System.out by a logger.(­Ø’d8¦ôœ…¾1
+G	java:S1064"+Replace this use of System.out by a logger.(ŒÑœë8¦ôœ…¾1
+L	java:S1067"+Replace this use of System.out by a logger.(ïŠ²ìşÿÿÿÿ8§ôœ…¾1
+L	java:S1068"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8§ôœ…¾1
+L	java:S106^"+Replace this use of System.out by a logger.(ÇÔ¦¥úÿÿÿÿ8°ôœ…¾1

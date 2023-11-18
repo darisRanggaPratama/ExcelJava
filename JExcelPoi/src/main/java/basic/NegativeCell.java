@@ -51,7 +51,6 @@ public class NegativeCell {
             Sheet newSheet = workbook.createSheet("NEG");
 
             // Get Negative. Example: A2 to E46
-
             System.out.print("Row:\n  First: ");
             int firstRow = scan.nextInt();
             System.out.print("  Last: ");

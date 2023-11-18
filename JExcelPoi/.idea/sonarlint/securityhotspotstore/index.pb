@@ -23,3 +23,9 @@ Q
 !src/main/java/basic/ZeroCell.java,f\8\f844a0b2f83a3b49eb28bb1f264bdb7d67ba75d2
 Q
 !src/main/java/basic/NullCell.java,4\7\472775a9eb4a7b0ec0b157686951302d9f127462
+P
+ src/main/java/kotlin/NullCell.kt,b\d\bda261b06204d77bf994614c8c71397709ed3c4d
+Q
+!src/main/java/kotlins/NullCell.kt,9\b\9b4d5660122ce9513600dcd54df4c0222e1ea01c
+R
+"src/main/java/kotlins/NullCells.kt,7\4\740fe0a5ea1d7e1db63ad8d61f8b0363b194afa9

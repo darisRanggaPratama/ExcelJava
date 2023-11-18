@@ -12,13 +12,13 @@ java:S1659"BDeclare "RESET" and all following declarations on a separate line.
 _
 java:S1659 "CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68¤Ìñê½1
 B
-java:S1659M" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8¥Ìñê½1
+java:S1659L" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8¥Ìñê½1
 L	java:S106$"+Replace this use of System.out by a logger.(ÄÜÔ˜üÿÿÿÿ8¥Ìñê½1
 F	java:S106."+Replace this use of System.out by a logger.(ÅçY8°Ìñê½1
-G	java:S1067"+Replace this use of System.out by a logger.(Ãì„É8±Ìñê½1
-G	java:S1069"+Replace this use of System.out by a logger.(ŒÑœë8±Ìñê½1
-F	java:S106<"+Replace this use of System.out by a logger.(­Ø’d8±Ìñê½1
-G	java:S106>"+Replace this use of System.out by a logger.(ŒÑœë8²Ìñê½1
-G	java:S106A"+Replace this use of System.out by a logger.(Éü€8²Ìñê½1
-L	java:S106B"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8²Ìñê½1
-L	java:S106n"+Replace this use of System.out by a logger.(¬ÑìÎıÿÿÿÿ8»Ìñê½1
+G	java:S1066"+Replace this use of System.out by a logger.(Ãì„É8±Ìñê½1
+G	java:S1068"+Replace this use of System.out by a logger.(ŒÑœë8±Ìñê½1
+F	java:S106;"+Replace this use of System.out by a logger.(­Ø’d8±Ìñê½1
+G	java:S106="+Replace this use of System.out by a logger.(ŒÑœë8²Ìñê½1
+G	java:S106@"+Replace this use of System.out by a logger.(Éü€8²Ìñê½1
+L	java:S106A"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8²Ìñê½1
+L	java:S106m"+Replace this use of System.out by a logger.(¬ÑìÎıÿÿÿÿ8»Ìñê½1

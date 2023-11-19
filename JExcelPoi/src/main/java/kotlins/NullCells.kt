@@ -24,13 +24,16 @@ fun main() {
 
         // Create cell title
         val rowTitle = sheetNew.createRow(0)
-        val cellTitle = rowTitle.createCell(0)
+        var noTitle = rowTitle.createCell(0)
+        val cellTitle = rowTitle.createCell(1)
+        noTitle.setCellValue("No")
         cellTitle.setCellValue("Alamat Cell Null/Empty")
-        println("Null/Empty")
+        println("\nNull/Empty")
 
         // Check null/empty/missing/blank cell
         var rowIndex = 1
-        for (rowIdx in 1 until 46) {
+        var no = 0;
+        for (rowIdx in 1 until 47) {
             val row = sheet.getRow(rowIdx)
 
             for (colIdx in 0 until 6) {
@@ -41,9 +44,10 @@ fun main() {
                     // Write blank address cell in new sheet
                     val nullRow = sheetNew.createRow(rowIndex++)
                     val cellAddress = nullRow.createCell(0)
-                    cellAddress.setCellValue("${CellReference.convertNumToColString(colIdx)}${rowIdx + 1}")
+                    no++
+                    cellAddress.setCellValue("$no  ${CellReference.convertNumToColString(colIdx)}${rowIdx + 1}")
 
-                    println("${CellReference.convertNumToColString(colIdx)}${rowIdx + 1}")
+                    println("$no  ${CellReference.convertNumToColString(colIdx)}${rowIdx + 1}")
                 }
             }
         }

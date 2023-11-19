@@ -7,6 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class NullCell {
@@ -54,12 +55,20 @@ public class NullCell {
             System.out.println("\nNo  Null/Empty");
 
             // Check null/empty/missing/blank cell
-            int rowIndex = 1, no = 0;
-            for (int rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
-                Row row = sheet.getRow(rowIdx);
+            int rowIndex = 1, rowIdx = 0, colIdx = 0, no = 0;
+            for (rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
 
-                for (int colIdx = firstCol; colIdx <= lastCol; colIdx++) {
-                    Cell cell = row.getCell(colIdx);
+                int idxRow = Optional.ofNullable(rowIdx)
+                        .orElse(0);
+
+                Row row = sheet.getRow(idxRow);
+
+                for (colIdx = firstCol; colIdx <= lastCol; colIdx++) {
+
+                    int idxCol = Optional.ofNullable(colIdx)
+                            .orElse(0);
+
+                    Cell cell = row.getCell(idxCol);
 
                     // Check null/empty/missing/blank value
                     if (cell == null || (cell.getCellType() == CellType.STRING && cell.getStringCellValue().trim().isEmpty())) {

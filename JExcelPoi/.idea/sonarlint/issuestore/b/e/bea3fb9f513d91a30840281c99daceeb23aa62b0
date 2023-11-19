@@ -1,8 +1,8 @@
 
-l
-java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8Éà“½1
 j
 java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(õ°•ì8Éà“½1
+l
+java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8Éà“½1
 o
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘8™Éà“½1
 F	java:S106 "+Replace this use of System.out by a logger.(Äö®8·Éà“½1

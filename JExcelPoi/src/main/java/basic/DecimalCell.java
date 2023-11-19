@@ -92,7 +92,7 @@ public class DecimalCell {
                             cell.setCellComment(comment);
 
                             CellStyle style = workbook.createCellStyle();
-                            style.setFillForegroundColor(IndexedColors.LIGHT_GREEN.getIndex());
+                            style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());
                             style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
                             cell.setCellStyle(style);
 

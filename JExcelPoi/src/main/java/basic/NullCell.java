@@ -1,7 +1,18 @@
 package basic;
 
-import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.Comment;
+
 import org.apache.poi.ss.util.CellReference;
+import org.apache.poi.xssf.usermodel.XSSFClientAnchor;
+import org.apache.poi.xssf.usermodel.XSSFRichTextString;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
@@ -18,7 +29,7 @@ public class NullCell {
     public static void main(String[] args) {
         try {
             // Get Excel file path
-            System.out.println("File Name:");
+            System.out.println("\nFile Name:");
             String name = scan.nextLine();
             String path = "./src/main/java/trial/";
             String excelFilePath = path + name;
@@ -56,6 +67,7 @@ public class NullCell {
 
             // Check null/empty/missing/blank cell
             int rowIndex = 1, rowIdx = 0, colIdx = 0, no = 0;
+            workbook.setMissingCellPolicy(Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
             for (rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
 
                 int idxRow = Optional.ofNullable(rowIdx)
@@ -71,8 +83,22 @@ public class NullCell {
                     Cell cell = row.getCell(idxCol);
 
                     // Check null/empty/missing/blank value
-                    if (cell == null || (cell.getCellType() == CellType.STRING && cell.getStringCellValue().trim().isEmpty())) {
+                    if (cell == null || cell.getCellType() == CellType.BLANK ||
+                            (cell.getCellType() == CellType.STRING && cell.getStringCellValue().trim().isBlank()) ||
+                            (cell.getCellType() == CellType.STRING && cell.getStringCellValue().trim().isEmpty())) {
                         no++;
+
+                        // Add comment
+                        Comment comment = sheet.createDrawingPatriarch().createCellComment(
+                                new XSSFClientAnchor(0, 0, 0, 0,
+                                        (short) colIdx, rowIdx, (short) (colIdx + 1), rowIdx + 1));
+                        comment.setString(new XSSFRichTextString("Null"));
+                        cell.setCellComment(comment);
+
+                        CellStyle style = workbook.createCellStyle();
+                        style.setFillForegroundColor(IndexedColors.LIGHT_ORANGE.getIndex());
+                        style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+                        cell.setCellStyle(style);
 
                         // Write blank address cell in new sheet
                         Row newRow = sheetNew.createRow(rowIndex++);

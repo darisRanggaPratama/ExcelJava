@@ -1,24 +1,24 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8¨°Çõ½1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8¨°Çõ½1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8©°Çõ½1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68©°Çõ½1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68©°Çõ½1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68©°Çõ½1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8¨°Çõ½1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8¨°Çõ½1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8©°Çõ½1
+l	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68©°Çõ½1
+l	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68©°Çõ½1
+l	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68©°Çõ½1
 l
-java:S2095""JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8Í´Çõ½1
+java:S2095+"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8ŠÀÆ¾1
 d
-java:S1659"BDeclare "RESET" and all following declarations on a separate line.(ğÅÚ¢ûÿÿÿÿ8Ö´Çõ½1
+java:S1659"BDeclare "RESET" and all following declarations on a separate line.(ğÅÚ¢ûÿÿÿÿ8Ö´Çõ½1
 _
-java:S1659"CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68Ö´Çõ½1
+java:S1659 "CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68Ö´Çõ½1
 B
-java:S1659C" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8×´Çõ½1
-L	java:S106"+Replace this use of System.out by a logger.(ÄÜÔ˜üÿÿÿÿ8×´Çõ½1
-F	java:S106%"+Replace this use of System.out by a logger.(ÅçY8î´Çõ½1
-G	java:S106-"+Replace this use of System.out by a logger.(Ãì„É8ï´Çõ½1
-G	java:S106/"+Replace this use of System.out by a logger.(ŒÑœë8ï´Çõ½1
-F	java:S1062"+Replace this use of System.out by a logger.(­Ø’d8ğ´Çõ½1
-G	java:S1064"+Replace this use of System.out by a logger.(ŒÑœë8ğ´Çõ½1
-L	java:S1067"+Replace this use of System.out by a logger.(‘üñûÿÿÿÿ8ğ´Çõ½1
-L	java:S1068"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8ğ´Çõ½1
-L	java:S106f"+Replace this use of System.out by a logger.(¬ÑìÎıÿÿÿÿ8ü´Çõ½1
+java:S1659L" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8×´Çõ½1
+L	java:S106$"+Replace this use of System.out by a logger.(ÄÜÔ˜üÿÿÿÿ8×´Çõ½1
+F	java:S106."+Replace this use of System.out by a logger.(ÅçY8î´Çõ½1
+G	java:S1066"+Replace this use of System.out by a logger.(Ãì„É8ï´Çõ½1
+G	java:S1068"+Replace this use of System.out by a logger.(ŒÑœë8ï´Çõ½1
+F	java:S106;"+Replace this use of System.out by a logger.(­Ø’d8ğ´Çõ½1
+G	java:S106="+Replace this use of System.out by a logger.(ŒÑœë8ğ´Çõ½1
+L	java:S106@"+Replace this use of System.out by a logger.(‘üñûÿÿÿÿ8ğ´Çõ½1
+L	java:S106A"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8ğ´Çõ½1
+L	java:S106o"+Replace this use of System.out by a logger.(¬ÑìÎıÿÿÿÿ8ü´Çõ½1

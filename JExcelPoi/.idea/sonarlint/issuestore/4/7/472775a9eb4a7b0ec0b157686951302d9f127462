@@ -1,13 +1,15 @@
 
+_
+java:S2259`"BA "NullPointerException" could be thrown; "cell" is nullable here.(÷˜³„8ë¤ÔÆ¾1
 l
-java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(»·æÏùÿÿÿÿ8İ™¡¾1
+java:S2095'"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(»·æÏùÿÿÿÿ8ë¤ÔÆ¾1
 `
-java:S1659:"CDeclare "rowIdx" and all following declarations on a separate line.(ä±§8ç™¡¾1
-L	java:S106"+Replace this use of System.out by a logger.(ÄÜÔ˜üÿÿÿÿ8è™¡¾1
-F	java:S106"+Replace this use of System.out by a logger.(ÅçY8ş™¡¾1
-G	java:S106'"+Replace this use of System.out by a logger.(Ãì„É8€š¡¾1
-G	java:S106)"+Replace this use of System.out by a logger.(ŒÑœë8€š¡¾1
-F	java:S106,"+Replace this use of System.out by a logger.(­Ø’d8š¡¾1
-G	java:S106."+Replace this use of System.out by a logger.(ŒÑœë8‚š¡¾1
-L	java:S1067"+Replace this use of System.out by a logger.(íé÷ûÿÿÿÿ8ƒš¡¾1
-F	java:S106V"+Replace this use of System.out by a logger.(Ôıõ}8‡š¡¾1
+java:S1659E"CDeclare "rowIdx" and all following declarations on a separate line.(ä±§8û¤ÔÆ¾1
+G	java:S106 "+Replace this use of System.out by a logger.(ÉÄõ·8û¤ÔÆ¾1
+F	java:S106*"+Replace this use of System.out by a logger.(ÅçY8¥ÔÆ¾1
+G	java:S1062"+Replace this use of System.out by a logger.(Ãì„É8¥ÔÆ¾1
+G	java:S1064"+Replace this use of System.out by a logger.(ŒÑœë8‘¥ÔÆ¾1
+F	java:S1067"+Replace this use of System.out by a logger.(­Ø’d8’¥ÔÆ¾1
+G	java:S1069"+Replace this use of System.out by a logger.(ŒÑœë8“¥ÔÆ¾1
+L	java:S106B"+Replace this use of System.out by a logger.(íé÷ûÿÿÿÿ8—¥ÔÆ¾1
+F	java:S106p"+Replace this use of System.out by a logger.(Ôıõ}8¢¥ÔÆ¾1

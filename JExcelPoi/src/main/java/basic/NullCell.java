@@ -110,6 +110,7 @@ public class NullCell {
                         newNo.setCellValue(no);
                         newCellAddress.setCellValue(cellAddress);
 
+                        // Write in console
                         System.out.println(no + "   " + cellAddress);
                     }
                 }
@@ -125,10 +126,10 @@ public class NullCell {
             input.close();
             output.close();
         } catch (IOException e) {
-            String noFile = "File not found: \n" + e;
+            String noFile = "\nFile not found: \n" + e;
             logger.log(System.Logger.Level.ERROR, noFile);
         } catch (NullPointerException e) {
-            String blank = "Blank Cell: \n" + e;
+            String blank = "\nBlank Cell: \n" + e;
             logger.log(System.Logger.Level.ERROR, blank);
         }
     }

@@ -95,6 +95,7 @@ public class NullCell {
                         comment.setString(new XSSFRichTextString("Null"));
                         cell.setCellComment(comment);
 
+                        // Add Background color
                         CellStyle style = workbook.createCellStyle();
                         style.setFillForegroundColor(IndexedColors.LIGHT_ORANGE.getIndex());
                         style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
@@ -109,7 +110,7 @@ public class NullCell {
                         newNo.setCellValue(no);
                         newCellAddress.setCellValue(cellAddress);
 
-                        System.out.println(no + "   " + CellReference.convertNumToColString(colIdx) + (rowIdx + 1));
+                        System.out.println(no + "   " + cellAddress);
                     }
                 }
             }

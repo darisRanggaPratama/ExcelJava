@@ -1,16 +1,8 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-P
- src/main/java/basic/NegCell.java,b\e\bea3fb9f513d91a30840281c99daceeb23aa62b0
-O
-src/main/java/basic/NegVal.java,9\b\9b5a78f20f5feecb1978305fce68308a858b8d4c
 U
 %src/main/java/basic/NegativeCell.java,6\9\69918d1aafed03571fde12ce8fe7b4220612843b
-P
- src/main/java/basic/DecCell.java,f\3\f3b23ac26df61d7bc3d932ec86b48af438c9ae50
-Q
-!src/main/java/basic/NegCells.java,4\b\4ba485e6e756a3299f856f8663f75793fc28a356
 T
 $src/main/java/basic/DecimalCell.java,1\0\100e2607afd2fd168a473dd369e4f8545ff183b9
 P
@@ -25,3 +17,5 @@ Q
 !src/main/java/basic/NullCell.java,4\7\472775a9eb4a7b0ec0b157686951302d9f127462
 R
 "src/main/java/kotlins/NullCells.kt,7\4\740fe0a5ea1d7e1db63ad8d61f8b0363b194afa9
+R
+"src/main/java/basic/NullCells.java,5\e\5e3c4e0d9e786dae46b60eabe968259fe66ed8b4

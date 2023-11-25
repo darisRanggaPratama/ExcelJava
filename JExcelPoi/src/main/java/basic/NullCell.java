@@ -117,7 +117,7 @@ public class NullCell {
             }
 
             // Save file
-            FileOutputStream output = new FileOutputStream("./src/main/java/output/Nulls.xlsx");
+            FileOutputStream output = new FileOutputStream("./src/main/java/output/Null.xlsx");
             workbook.write(output);
 
             // Close Excel file

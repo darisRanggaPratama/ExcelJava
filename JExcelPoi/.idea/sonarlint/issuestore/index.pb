@@ -19,3 +19,5 @@ R
 "src/main/java/kotlins/NullCells.kt,7\4\740fe0a5ea1d7e1db63ad8d61f8b0363b194afa9
 R
 "src/main/java/basic/NullCells.java,5\e\5e3c4e0d9e786dae46b60eabe968259fe66ed8b4
+P
+ src/main/java/basic/StrCell.java,1\7\17ccb8dc05a66e8ec7dac19fea2aa94590b41eea

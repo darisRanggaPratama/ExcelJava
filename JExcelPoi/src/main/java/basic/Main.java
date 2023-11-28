@@ -2,6 +2,7 @@ package basic;
 
 public class Main {
     public static void main(String[] args) {
+        Data.inputData();
         DecimalCell.checkDecimal();
         ErrCell.checkErrCell();
         ErrCells.checkErrCells();

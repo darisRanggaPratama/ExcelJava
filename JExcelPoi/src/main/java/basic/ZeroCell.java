@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 
-public class ZeroCell {
+public class ZeroCell extends Data {
     private static final Logger logger = System.getLogger("ZeroCell");
 
     public static void checkZero() {

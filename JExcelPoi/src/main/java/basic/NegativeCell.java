@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 
-public class NegativeCell {
+public class NegativeCell extends Data {
     private static final Logger logger = System.getLogger("NegativeCell");
 
     public static void checkNegative() {

@@ -1,0 +1,27 @@
+
+o
+java:S1104"RMake fileXl a static final constant or non-public and provide accessors if needed.(ÌÜ§¦8ÓÁÚŒÁ1
+u
+java:S1104"SMake sheetXl a static final constant or non-public and provide accessors if needed.(Ì‘ÿóüÿÿÿÿ8ÔÁÚŒÁ1
+v
+java:S1104"TMake beginRow a static final constant or non-public and provide accessors if needed.(Ô¼Ïªøÿÿÿÿ8¥ÜŒÁ1
+t
+java:S1104"RMake endRow a static final constant or non-public and provide accessors if needed.(â•›ÿÿÿÿÿ8«ºÛŒÁ1
+t
+java:S1104"WMake firstColumn a static final constant or non-public and provide accessors if needed.(Éøµ©8ÕÁÚŒÁ1
+x
+java:S1104	"VMake lastColumn a static final constant or non-public and provide accessors if needed.(è¼Òìúÿÿÿÿ8ÕÁÚŒÁ1
+I
+java:S1444",Make this "public static fileXl" field final(ÌÜ§¦8ÕÁÚŒÁ1
+O
+java:S1444"-Make this "public static sheetXl" field final(Ì‘ÿóüÿÿÿÿ8ÕÁÚŒÁ1
+P
+java:S1444".Make this "public static beginRow" field final(Ô¼Ïªøÿÿÿÿ8¥ÜŒÁ1
+N
+java:S1444",Make this "public static endRow" field final(â•›ÿÿÿÿÿ8¬ºÛŒÁ1
+N
+java:S1444"1Make this "public static firstColumn" field final(Éøµ©8ÖÁÚŒÁ1
+R
+java:S1444	"0Make this "public static lastColumn" field final(è¼Òìúÿÿÿÿ8ÖÁÚŒÁ1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰8İÁÚŒÁ1

@@ -20,21 +20,18 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
-import java.util.Scanner;
 
 public class ZeroCell {
     private static final Logger logger = System.getLogger("ZeroCell");
-    private static final Scanner scan = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void checkZero() {
         // COLOR
         String BLUE = "\u001B[34m", RESET = "\u001B[0m", RED = "\u001B[31m";
         String MAGENTA = "\u001B[45m", YELLOW = "\u001B[43m", CYAN = "\u001B[46m";
 
         try {
             // Get Excel file path
-            System.out.println("File Name:");
-            String name = scan.nextLine();
+            String name = Data.fileXl;
             String path = "./src/main/java/trial/";
             String excelFilePath = path + name;
 
@@ -43,25 +40,19 @@ public class ZeroCell {
             Workbook workbook = new XSSFWorkbook(inputStream);
 
             // Get worksheet (GAJI)
-            System.out.println("Sheet Name:");
-            String sheetName = scan.nextLine();
+            String sheetName = Data.sheetXl;
             Sheet sheet = workbook.getSheet(sheetName);
 
             // Create worksheet
             Sheet newSheet = workbook.createSheet("Zero");
 
             // Get Decimal. Example: A2 to E46
-            System.out.print("Row:\n  First: ");
-            int firstRow = scan.nextInt();
-            System.out.print("  Last: ");
-            int lastRow = scan.nextInt();
+            int firstRow = Data.beginRow;
+            int lastRow = Data.endRow;
+            int firstCol = Data.firstColumn;
+            int lastCol = Data.lastColumn;
 
-            System.out.print("Column:\n  First: ");
-            int firstCol = scan.nextInt();
-            System.out.print("  Last: ");
-            int lastCol = scan.nextInt();
-
-            System.out.println(MAGENTA + "Found" + RESET + " Zero: ");
+            System.out.println(MAGENTA + "\nFound" + RESET + " Zero: ");
             System.out.println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET);
 
             // Cell to place title
@@ -113,14 +104,12 @@ public class ZeroCell {
                 }
             }
 
-
             // Save excel file
             FileOutputStream outputStream = new FileOutputStream("./src/main/java/output/Zero.xlsx");
             workbook.write(outputStream);
 
             // Close excel file
             workbook.close();
-            scan.close();
             inputStream.close();
             outputStream.close();
         } catch (IOException e) {

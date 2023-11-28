@@ -19,18 +19,14 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Optional;
-import java.util.Scanner;
 
 public class NullCell {
     private static final System.Logger logger = System.getLogger("NullCell");
 
-    private static final Scanner scan = new Scanner(System.in);
-
-    public static void main(String[] args) {
+    public static void checkNull() {
         try {
             // Get Excel file path
-            System.out.println("\nFile Name:");
-            String name = scan.nextLine();
+            String name = Data.fileXl;
             String path = "./src/main/java/trial/";
             String excelFilePath = path + name;
 
@@ -39,23 +35,17 @@ public class NullCell {
             Workbook workbook = new XSSFWorkbook(input);
 
             // Get worksheet (GAJI)
-            System.out.println("Sheet Name:");
-            String sheetName = scan.nextLine();
+            String sheetName = Data.sheetXl;
             Sheet sheet = workbook.getSheet(sheetName);
 
             // Create new sheet
             Sheet sheetNew = workbook.createSheet("Null");
 
             // Get Negative. Example: A2 to E46
-            System.out.print("Row:\n  First: ");
-            int firstRow = scan.nextInt();
-            System.out.print("  Last: ");
-            int lastRow = scan.nextInt();
-
-            System.out.print("Column:\n  First: ");
-            int firstCol = scan.nextInt();
-            System.out.print("  Last: ");
-            int lastCol = scan.nextInt();
+            int firstRow = Data.beginRow;
+            int lastRow = Data.endRow;
+            int firstCol = Data.firstColumn;
+            int lastCol = Data.lastColumn;
 
             // Create Cell Title
             Row rowTitle = sheetNew.createRow(0);
@@ -122,7 +112,6 @@ public class NullCell {
 
             // Close Excel file
             workbook.close();
-            scan.close();
             input.close();
             output.close();
         } catch (IOException e) {

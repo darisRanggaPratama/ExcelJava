@@ -22,7 +22,7 @@ import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 
 
-public class DecimalCell extends Data {
+public class DecimalCell {
     private static final Logger logger = System.getLogger("DecimalCell");
 
     public static void checkDecimal() {

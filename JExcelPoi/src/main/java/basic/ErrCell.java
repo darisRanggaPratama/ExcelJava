@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 
-public class ErrCell extends Data {
+public class ErrCell {
     private static final Logger logger = System.getLogger("ErrCell");
 
     public static void checkErrCell() {

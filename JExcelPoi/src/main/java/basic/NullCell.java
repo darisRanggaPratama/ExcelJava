@@ -20,7 +20,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Optional;
 
-public class NullCell extends Data {
+public class NullCell {
     private static final System.Logger logger = System.getLogger("NullCell");
 
     public static void checkNull() {

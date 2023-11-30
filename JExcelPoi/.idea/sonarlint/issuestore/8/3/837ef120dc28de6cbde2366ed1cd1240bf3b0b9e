@@ -6,7 +6,7 @@ l	java:S117"QRename this local variable to match the regular expression '^[a-
 l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68ğ¤†Á1
 l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68ğ¤†Á1
 l
-java:S2095("JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8Š©†Á1
+java:S2095'"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8Š©†Á1
 \
 java:S1118":Add a private constructor to hide the implicit public one.(—÷‘İÿÿÿÿÿ8œØÎ·Á1
 d
@@ -14,7 +14,7 @@ java:S1659"BDeclare "RESET" and all following declarations on a separate line.
 _
 java:S1659"CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68•©†Á1
 B
-java:S1659C" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8–©†Á1
-G	java:S1067"+Replace this use of System.out by a logger.(îÕˆ£8¦©†Á1
-L	java:S1068"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8¦©†Á1
-L	java:S106f"+Replace this use of System.out by a logger.(¬ÑìÎıÿÿÿÿ8°©†Á1
+java:S1659;" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8–©†Á1
+G	java:S106/"+Replace this use of System.out by a logger.(îÕˆ£8¦©†Á1
+L	java:S1060"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8¦©†Á1
+L	java:S106^"+Replace this use of System.out by a logger.(¬ÑìÎıÿÿÿÿ8°©†Á1

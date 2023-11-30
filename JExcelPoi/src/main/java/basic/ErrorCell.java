@@ -31,9 +31,8 @@ public class ErrorCell {
 
         try {
             // Get Excel file path
-            String name = Data.fileXl;
             String path = "./src/main/java/trial/";
-            String excelFilePath = path + name;
+            String excelFilePath = path + Data.fileXl;
 
             // Open file
             FileInputStream inputStream = new FileInputStream(excelFilePath);
@@ -45,12 +44,6 @@ public class ErrorCell {
 
             // Create worksheet
             Sheet newSheet = workbook.createSheet("ErrTxt");
-
-            // Get Decimal. Example: A2 to E46
-            int firstRow = Data.beginRow;
-            int lastRow = Data.endRow;
-            int firstCol = Data.firstColumn;
-            int lastCol = Data.lastColumn;
 
             System.out.println(MAGENTA + "\nFound" + RESET + " ERROR: ");
             System.out.println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET);
@@ -65,9 +58,9 @@ public class ErrorCell {
             titleValue.setCellValue("Error");
 
             int rowIndex = 1, no = 0;
-            for (int rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
+            for (int rowIdx = Data.beginRow; rowIdx <= Data.endRow; rowIdx++) {
                 Row row = sheet.getRow(rowIdx);
-                for (int colIdx = firstCol; colIdx <= lastCol; colIdx++) {
+                for (int colIdx = Data.firstColumn; colIdx <= Data.lastColumn; colIdx++) {
                     Cell cell = row.getCell(colIdx);
 
                     // Check Decimal Value

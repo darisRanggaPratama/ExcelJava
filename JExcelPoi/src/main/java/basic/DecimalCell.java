@@ -23,6 +23,7 @@ import java.lang.System.Logger.Level;
 
 
 public class DecimalCell {
+    // Show output log
     private static final Logger logger = System.getLogger("DecimalCell");
 
     public static void checkDecimal() {
@@ -32,26 +33,18 @@ public class DecimalCell {
 
         try {
             // Get Excel file path
-            String name = Data.fileXl;
             String path = "./src/main/java/trial/";
-            String excelFilePath = path + name;
+            String excelFilePath = path + Data.fileXl;
 
             // Open file
             FileInputStream inputStream = new FileInputStream(excelFilePath);
             Workbook workbook = new XSSFWorkbook(inputStream);
 
             // Get worksheet (GAJI)
-            String sheetName = Data.sheetXl;
-            Sheet sheet = workbook.getSheet(sheetName);
+            Sheet sheet = workbook.getSheet(Data.sheetXl);
 
             // Create worksheet
             Sheet newSheet = workbook.createSheet("DEC");
-
-            // Get Decimal. Example: A2 to E46
-            int firstRow = Data.beginRow;
-            int lastRow = Data.endRow;
-            int firstCol = Data.firstColumn;
-            int lastCol = Data.lastColumn;
 
             System.out.println(MAGENTA + "\nFound" + RESET + " DECIMAL: ");
             System.out.println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET);
@@ -66,9 +59,9 @@ public class DecimalCell {
             titleValue.setCellValue("Decimal");
 
             int rowIndex = 1, no = 0;
-            for (int rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
+            for (int rowIdx = Data.beginRow; rowIdx <= Data.endRow; rowIdx++) {
                 Row row = sheet.getRow(rowIdx);
-                for (int colIdx = firstCol; colIdx <= lastCol; colIdx++) {
+                for (int colIdx = Data.firstColumn; colIdx <= Data.lastColumn; colIdx++) {
                     Cell cell = row.getCell(colIdx);
 
                     // Check Decimal Value
@@ -77,12 +70,14 @@ public class DecimalCell {
                         int intValue = (int) cellValue;
                         if (cellValue != intValue) {
 
+                            // Put comment/ note in cell
                             Comment comment = sheet.createDrawingPatriarch().createCellComment(
                                     new XSSFClientAnchor(0, 0, 0, 0,
                                             (short) colIdx, rowIdx, (short) (colIdx + 1), rowIdx + 1));
                             comment.setString(new XSSFRichTextString("Decimal: " + cellValue));
                             cell.setCellComment(comment);
 
+                            // Coloring cell
                             CellStyle style = workbook.createCellStyle();
                             style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());
                             style.setFillPattern(FillPatternType.SOLID_FOREGROUND);

@@ -1,22 +1,22 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8Ğé¥Á1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8Ğé¥Á1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8Ğé¥Á1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68Ğé¥Á1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68Ğé¥Á1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68Ñé¥Á1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8šÈ”ÿÁ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8šÈ”ÿÁ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÅÚ¢ûÿÿÿÿ8šÈ”ÿÁ1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68šÈ”ÿÁ1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68šÈ”ÿÁ1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68›È”ÿÁ1
 l
-java:S2095("JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8Úì¥Á1
+java:S2095'"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›şÿÿÿÿ8ÜÊ”ÿÁ1
 j
-java:S2095'"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(õ°•ì8Úì¥Á1
+java:S2095&"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(õ°•ì8ÛÊ”ÿÁ1
 \
-java:S1118":Add a private constructor to hide the implicit public one.(ÜûÄ–ÿÿÿÿÿ8Ü‹Ï·Á1
+java:S1118":Add a private constructor to hide the implicit public one.(ÜûÄ–ÿÿÿÿÿ8ŞÊ”ÿÁ1
 d
-java:S1659"BDeclare "RESET" and all following declarations on a separate line.(ğÅÚ¢ûÿÿÿÿ8åì¥Á1
+java:S1659"BDeclare "RESET" and all following declarations on a separate line.(ğÅÚ¢ûÿÿÿÿ8ãÊ”ÿÁ1
 _
-java:S1659"CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68åì¥Á1
+java:S1659"CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68ãÊ”ÿÁ1
 B
-java:S1659C" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8…’°ŸÁ1
-G	java:S1067"+Replace this use of System.out by a logger.(îÕˆ£8ôì¥Á1
-L	java:S1068"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8˜’°ŸÁ1
-L	java:S106c"+Replace this use of System.out by a logger.(¬ÑìÎıÿÿÿÿ8 ’°ŸÁ1
+java:S1659<" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8äÊ”ÿÁ1
+G	java:S1060"+Replace this use of System.out by a logger.(îÕˆ£8ôÊ”ÿÁ1
+L	java:S1061"+Replace this use of System.out by a logger.(Ğû²Úıÿÿÿÿ8ıÊ”ÿÁ1
+L	java:S106\"+Replace this use of System.out by a logger.(¬ÑìÎıÿÿÿÿ8³·˜ÿÁ1

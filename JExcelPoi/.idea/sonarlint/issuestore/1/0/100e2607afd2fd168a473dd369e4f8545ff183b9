@@ -1,20 +1,20 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8à²û­Á1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8á²û­Á1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8á²û­Á1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68á²û­Á1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68á²û­Á1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68â²û­Á1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8‡á”þÁ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8‡á”þÁ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8‡á”þÁ1
+l	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68‡á”þÁ1
+l	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68‡á”þÁ1
+l	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68‡á”þÁ1
 l
-java:S2095)"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›Žþÿÿÿÿ8ð¼û­Á1
+java:S2095)"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›Žþÿÿÿÿ8­ç”þÁ1
 W
-java:S1118":Add a private constructor to hide the implicit public one.(ãßéü8¤ÎÌ·Á1
+java:S1118":Add a private constructor to hide the implicit public one.(ãßéü8±ç”þÁ1
 d
-java:S1659"BDeclare "RESET" and all following declarations on a separate line.(ðÅÚ¢ûÿÿÿÿ8›½û­Á1
+java:S1659"BDeclare "RESET" and all following declarations on a separate line.(ðÅÚ¢ûÿÿÿÿ8·ç”þÁ1
 _
-java:S1659"CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68œ½û­Á1
+java:S1659 "CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68·ç”þÁ1
 B
-java:S1659D" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8Ÿ½û­Á1
-G	java:S1068"+Replace this use of System.out by a logger.(ÅÁÜ¤8½½û­Á1
-L	java:S1069"+Replace this use of System.out by a logger.(Ðû²Úýÿÿÿÿ8¿½û­Á1
-L	java:S106f"+Replace this use of System.out by a logger.(¬ÑìÎýÿÿÿÿ8Ø½û­Á1
+java:S1659=" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8¹ç”þÁ1
+G	java:S1061"+Replace this use of System.out by a logger.(ÅÁÜ¤8Êç”þÁ1
+L	java:S1062"+Replace this use of System.out by a logger.(Ðû²Úýÿÿÿÿ8Ëç”þÁ1
+L	java:S106a"+Replace this use of System.out by a logger.(¬ÑìÎýÿÿÿÿ8Øç”þÁ1

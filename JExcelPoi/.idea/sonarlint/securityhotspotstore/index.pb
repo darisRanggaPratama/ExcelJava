@@ -25,3 +25,11 @@ M
 src/main/java/basic/Main.java,0\1\01a7a3f8e76d8825a9386fd826fbb9274939d2e0
 M
 src/main/java/basic/Data.java,1\3\13f4b3090b7c338a1330c7724ddea96fd414df66
+Q
+!src/main/java/kotlins/NullCell.kt,9\b\9b4d5660122ce9513600dcd54df4c0222e1ea01c
+T
+$src/main/java/kotlins/NullCell.kt.kt,c\7\c7e91547e1adc09d9cbe9586d3a30101f74f0e25
+R
+"src/main/java/kotlins/NullCellK.kt,6\3\63567629a51ed6645e8bc4e693830e09557dccc8
+R
+"src/main/java/kotlins/KNullCell.kt,3\e\3eb07d3a908848cfbc9be501a03636cb4a034cc7

@@ -1,5 +1,6 @@
 package kotlins
 
+import basic.Data
 import org.apache.poi.ss.usermodel.*
 import org.apache.poi.ss.util.CellReference
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
@@ -32,15 +33,17 @@ fun main() {
 
         // Check null/empty/missing/blank cell
         var rowIndex = 1
-        var no = 0;
-        for (rowIdx in 1 until 47) {
+        var no = 0
+        for (rowIdx in Data.beginRow until Data.endRow) {
             val row = sheet.getRow(rowIdx)
 
-            for (colIdx in 0 until 6) {
+            for (colIdx in Data.firstColumn until Data.lastColumn) {
                 val cell = row?.getCell(colIdx)
 
                 // Check null/empty/missing/blank value
-                if (cell == null || (cell.cellType == CellType.STRING && cell.stringCellValue.trim().isEmpty())) {
+                if (cell == null ||
+                    (cell.cellType == CellType.STRING && cell.stringCellValue.trim().isEmpty())
+                ) {
                     // Write blank address cell in new sheet
                     val nullRow = sheetNew.createRow(rowIndex++)
                     val cellAddress = nullRow.createCell(0)

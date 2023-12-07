@@ -1,21 +1,28 @@
 package basic;
 
-import kotlins.KNullCell;
+import kotlins.*;
+import kotlins.NullCell;
 
 public class Main {
     public static void main(String[] args) {
         Data.inputData();
-        KNullCell.Companion.checkNull();
+        StrCellK.Companion.checkString();
+        // NullCell.Companion.checkNull();
+        //NegativeCellK.Companion.checkNegative();
+        // ErrCell.checkErrCell();
+        // ErrCellK.Companion.checkErrCell();
 
+        //  ErrCells.checkErrCells();
+        // ErrCellsK.Companion.checkErrCells();
 
-        //DecimalCell.checkDecimal();
-        //ErrCell.checkErrCell();
-        //ErrCells.checkErrCells();
-        // ErrorCell.checkErrorCell();
-        // NegativeCell.checkNegative();
-        // NullCell.checkNull();
-        // StrCell.checkString();
-        //ZeroCell.checkZero();
+//        DecimalCell.checkDecimal();
+//        ErrCell.checkErrCell();
+//        ErrCells.checkErrCells();
+//        NegativeCell.checkNegative();
+//        NullCell.checkNull();
+//        StrCell.checkString();
+//        ZeroCell.checkZero();
+
 
     }
 }

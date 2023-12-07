@@ -22,7 +22,7 @@ import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 
 public class StrCell {
-    private static final Logger logger = System.getLogger("ErrCells");
+    private static final Logger logger = System.getLogger("StrCell");
 
     public static void checkString() {
         // COLOR
@@ -31,26 +31,18 @@ public class StrCell {
 
         try {
             // Get Excel file path
-            String name = Data.fileXl;
             String path = "./src/main/java/trial/";
-            String excelFilePath = path + name;
+            String excelFilePath = path + Data.fileXl;
 
             // Open file
             FileInputStream inputStream = new FileInputStream(excelFilePath);
             Workbook workbook = new XSSFWorkbook(inputStream);
 
             // Get worksheet (GAJI)
-            String sheetName = Data.sheetXl;
-            Sheet sheet = workbook.getSheet(sheetName);
+            Sheet sheet = workbook.getSheet(Data.sheetXl);
 
             // Create worksheet
-            Sheet newSheet = workbook.createSheet("Err");
-
-            // Get Decimal. Example: A2 to E46
-            int firstRow = Data.beginRow;
-            int lastRow = Data.endRow;
-            int firstCol = Data.firstColumn;
-            int lastCol = Data.lastColumn;
+            Sheet newSheet = workbook.createSheet("Str");
 
             System.out.println(MAGENTA + "\nFound" + RESET + " STRING: ");
             System.out.println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET);
@@ -65,9 +57,9 @@ public class StrCell {
             titleValue.setCellValue("String");
 
             int rowIndex = 1, no = 0;
-            for (int rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
+            for (int rowIdx = Data.beginRow; rowIdx <= Data.endRow; rowIdx++) {
                 Row row = sheet.getRow(rowIdx);
-                for (int colIdx = firstCol; colIdx <= lastCol; colIdx++) {
+                for (int colIdx = Data.firstColumn; colIdx <= Data.lastColumn; colIdx++) {
                     Cell cell = row.getCell(colIdx);
 
                     // Check Decimal Value

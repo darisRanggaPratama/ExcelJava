@@ -26,26 +26,18 @@ public class NullCell {
     public static void checkNull() {
         try {
             // Get Excel file path
-            String name = Data.fileXl;
             String path = "./src/main/java/trial/";
-            String excelFilePath = path + name;
+            String excelFilePath = path + Data.fileXl;
 
             // Open file
             FileInputStream input = new FileInputStream(excelFilePath);
             Workbook workbook = new XSSFWorkbook(input);
 
             // Get worksheet (GAJI)
-            String sheetName = Data.sheetXl;
-            Sheet sheet = workbook.getSheet(sheetName);
+            Sheet sheet = workbook.getSheet(Data.sheetXl);
 
             // Create new sheet
             Sheet sheetNew = workbook.createSheet("Null");
-
-            // Get Negative. Example: A2 to E46
-            int firstRow = Data.beginRow;
-            int lastRow = Data.endRow;
-            int firstCol = Data.firstColumn;
-            int lastCol = Data.lastColumn;
 
             // Create Cell Title
             Row rowTitle = sheetNew.createRow(0);
@@ -58,14 +50,14 @@ public class NullCell {
             // Check null/empty/missing/blank cell
             int rowIndex = 1, rowIdx = 0, colIdx = 0, no = 0;
             workbook.setMissingCellPolicy(Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
-            for (rowIdx = firstRow; rowIdx <= lastRow; rowIdx++) {
+            for (rowIdx = Data.beginRow; rowIdx <= Data.endRow; rowIdx++) {
 
                 int idxRow = Optional.ofNullable(rowIdx)
                         .orElse(0);
 
                 Row row = sheet.getRow(idxRow);
 
-                for (colIdx = firstCol; colIdx <= lastCol; colIdx++) {
+                for (colIdx = Data.firstColumn; colIdx <= Data.lastColumn; colIdx++) {
 
                     int idxCol = Optional.ofNullable(colIdx)
                             .orElse(0);

@@ -6,7 +6,9 @@ import kotlins.NullCell;
 public class Main {
     public static void main(String[] args) {
         Data.inputData();
-        StrCellK.Companion.checkString();
+        ZeroCells.Companion.checkZero();
+        ZeroCell.checkZero();
+        // StrCellK.Companion.checkString();
         // NullCell.Companion.checkNull();
         //NegativeCellK.Companion.checkNegative();
         // ErrCell.checkErrCell();

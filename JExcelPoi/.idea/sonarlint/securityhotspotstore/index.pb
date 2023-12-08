@@ -13,18 +13,12 @@ Q
 !src/main/java/basic/ZeroCell.java,f\8\f844a0b2f83a3b49eb28bb1f264bdb7d67ba75d2
 Q
 !src/main/java/basic/NullCell.java,4\7\472775a9eb4a7b0ec0b157686951302d9f127462
-R
-"src/main/java/kotlins/NullCells.kt,7\4\740fe0a5ea1d7e1db63ad8d61f8b0363b194afa9
 P
  src/main/java/basic/StrCell.java,1\7\17ccb8dc05a66e8ec7dac19fea2aa94590b41eea
 M
 src/main/java/basic/Main.java,0\1\01a7a3f8e76d8825a9386fd826fbb9274939d2e0
 M
 src/main/java/basic/Data.java,1\3\13f4b3090b7c338a1330c7724ddea96fd414df66
-R
-"src/main/java/kotlins/NullCellK.kt,6\3\63567629a51ed6645e8bc4e693830e09557dccc8
-R
-"src/main/java/kotlins/KNullCell.kt,3\e\3eb07d3a908848cfbc9be501a03636cb4a034cc7
 Q
 !src/main/java/kotlins/DecCells.kt,7\1\710c5d19c977ff858670e82b0c47666bd0fa88be
 Q
@@ -39,3 +33,5 @@ Q
 !src/main/java/kotlins/NullCell.kt,9\b\9b4d5660122ce9513600dcd54df4c0222e1ea01c
 Q
 !src/main/java/kotlins/StrCellK.kt,6\3\63e7878c281ae6f0e3b90f00cd5ce73dec26fae9
+R
+"src/main/java/kotlins/ZeroCells.kt,3\b\3b75ada4299ef9c449c65a9915dac48bc76c1ed8

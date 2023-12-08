@@ -17,4 +17,4 @@ B
 java:S1659;" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8çá…‰Â1
 G	java:S106/"+Replace this use of System.out by a logger.(êŠÍ¢8õá…‰Â1
 L	java:S1060"+Replace this use of System.out by a logger.(Ðû²Úýÿÿÿÿ8öá…‰Â1
-L	java:S106]"+Replace this use of System.out by a logger.(¬ÑìÎýÿÿÿÿ8ÿá…‰Â1
+L	java:S106^"+Replace this use of System.out by a logger.(¬ÑìÎýÿÿÿÿ8ÿá…‰Â1

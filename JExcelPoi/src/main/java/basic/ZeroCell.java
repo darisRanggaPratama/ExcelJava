@@ -59,6 +59,7 @@ public class ZeroCell {
             int rowIndex = 1, no = 0;
             for (int rowIdx = Data.beginRow; rowIdx <= Data.endRow; rowIdx++) {
                 Row row = sheet.getRow(rowIdx);
+
                 for (int colIdx = Data.firstColumn; colIdx <= Data.lastColumn; colIdx++) {
                     Cell cell = row.getCell(colIdx);
 

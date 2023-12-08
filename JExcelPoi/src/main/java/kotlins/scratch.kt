@@ -11,9 +11,9 @@ import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
 
-object StrCell {
-    private val logger = System.getLogger("StrCell")
-    fun checkString() {
+object ZeroCell {
+    private val logger = System.getLogger("ZeroCell")
+    fun checkZero() {
         // COLOR
         val BLUE = "\u001B[34m"
         val RESET = "\u001B[0m"
@@ -34,8 +34,8 @@ object StrCell {
             val sheet = workbook.getSheet(Data.sheetXl)
 
             // Create worksheet
-            val newSheet = workbook.createSheet("Err")
-            println("$MAGENTA\nFound$RESET STRING: ")
+            val newSheet = workbook.createSheet("Zero")
+            println("$MAGENTA\nFound$RESET Zero: ")
             println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET)
 
             // Cell to place title
@@ -45,46 +45,50 @@ object StrCell {
             val titleCell = titleRow.createCell(1)
             titleCell.setCellValue("Cell")
             val titleValue = titleRow.createCell(2)
-            titleValue.setCellValue("String")
+            titleValue.setCellValue("Zero")
             var rowIndex = 1
             var no = 0
+
             for (rowIdx in Data.beginRow..Data.endRow) {
                 val row = sheet.getRow(rowIdx)
                 for (colIdx in Data.firstColumn..Data.lastColumn) {
                     val cell = row.getCell(colIdx)
 
                     // Check Decimal Value
-                    if (cell != null && cell.cellType == CellType.STRING) {
-                        val cellValue = cell.stringCellValue
-                        val comment = sheet.createDrawingPatriarch().createCellComment(
-                            XSSFClientAnchor(
-                                0, 0, 0, 0,
-                                colIdx.toShort().toInt(), rowIdx, (colIdx + 1).toShort().toInt(), rowIdx + 1
+                    if (cell != null && cell.cellType == CellType.NUMERIC) {
+                        val cellValue = cell.numericCellValue
+                        if (cellValue == 0.0) {
+                            val comment = sheet.createDrawingPatriarch().createCellComment(
+                                XSSFClientAnchor(
+                                    0, 0, 0, 0,
+                                    colIdx.toShort().toInt(), rowIdx, (colIdx + 1).toShort().toInt(), rowIdx + 1
+                                )
                             )
-                        )
-                        comment.string = XSSFRichTextString("String: $cellValue")
-                        cell.cellComment = comment
+                            comment.string = XSSFRichTextString("Zero: $cellValue")
+                            cell.cellComment = comment
 
-                        val style = workbook.createCellStyle()
-                        style.fillForegroundColor = IndexedColors.LIGHT_GREEN.getIndex()
-                        style.fillPattern = FillPatternType.SOLID_FOREGROUND
-                        cell.cellStyle = style
-                        val newRow = newSheet.createRow(rowIndex++)
-                        val newNo = newRow.createCell(0)
-                        val newCellAddress = newRow.createCell(1)
-                        val newCellValue = newRow.createCell(2)
-                        val cellAddress = CellReference.convertNumToColString(colIdx) + (rowIdx + 1)
-                        no++
-                        newNo.setCellValue(no.toDouble())
-                        newCellAddress.setCellValue(cellAddress)
-                        newCellValue.setCellValue(cellValue)
-                        println("$no$RESET $BLUE$cellAddress: $RESET$RED$cellValue$RESET")
+                            val style = workbook.createCellStyle()
+                            style.fillForegroundColor = IndexedColors.LIGHT_BLUE.getIndex()
+                            style.fillPattern = FillPatternType.SOLID_FOREGROUND
+                            cell.cellStyle = style
+                            
+                            val newRow = newSheet.createRow(rowIndex++)
+                            val newNo = newRow.createCell(0)
+                            val newCellAddress = newRow.createCell(1)
+                            val newCellValue = newRow.createCell(2)
+                            val cellAddress = CellReference.convertNumToColString(colIdx) + (rowIdx + 1)
+                            no++
+                            newNo.setCellValue(no.toDouble())
+                            newCellAddress.setCellValue(cellAddress)
+                            newCellValue.setCellValue(cellValue)
+                            println("$no$RESET $BLUE$cellAddress: $RESET$RED$cellValue$RESET")
+                        }
                     }
                 }
             }
 
             // Save excel file
-            val outputStream = FileOutputStream("./src/main/java/output/Str.xlsx")
+            val outputStream = FileOutputStream("./src/main/java/output/Zero.xlsx")
             workbook.write(outputStream)
 
             // Close excel file

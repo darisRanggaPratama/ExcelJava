@@ -17,9 +17,9 @@ import java.lang.System.getLogger
 import java.lang.System.Logger.Level
 import java.util.Optional
 
-class NullCell {
+class NullCells {
     companion object {
-        private val logger = getLogger("NullCell")
+        private val logger = getLogger("NullCells")
 
         fun checkNull() {
             try {

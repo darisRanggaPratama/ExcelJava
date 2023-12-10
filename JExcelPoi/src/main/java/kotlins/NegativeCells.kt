@@ -11,15 +11,15 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
+
 import java.lang.System.getLogger
 import java.lang.System.Logger.Level
 
-class ErrCellsK {
+class NegativeCells {
     companion object {
-        private val logger = getLogger("ErrCellsK")
+        private val logger = getLogger("NegativeCells")
 
-        fun checkErrCells() {
-            // COLOR
+        fun checkNegative() {
             val BLUE = "\u001B[34m"
             val RESET = "\u001B[0m"
             val RED = "\u001B[31m"
@@ -34,9 +34,9 @@ class ErrCellsK {
                 val inputStream = FileInputStream(excelFilePath)
                 val workbook = XSSFWorkbook(inputStream)
                 val sheet = workbook.getSheet(Data.sheetXl)
-                val newSheet = workbook.createSheet("Err")
 
-                println("$MAGENTA\nFound$RESET Decimal: ")
+                val newSheet = workbook.createSheet("NEG")
+                println("$MAGENTA\nFound$RESET Negative: ")
                 println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET)
 
                 val titleRow = newSheet.createRow(0)
@@ -45,33 +45,30 @@ class ErrCellsK {
                 val titleCell = titleRow.createCell(1)
                 titleCell.setCellValue("Cell")
                 val titleValue = titleRow.createCell(2)
-                titleValue.setCellValue("Error")
+                titleValue.setCellValue("Negative")
 
                 var rowIndex: Int = 1
                 var no: Int = 0
-
                 for (rowIdx in Data.beginRow..Data.endRow) {
                     val row = sheet.getRow(rowIdx)
                     for (colIdx in Data.firstColumn..Data.lastColumn) {
                         val cell = row.getCell(colIdx)
 
-                        if (cell != null && cell.cellType == CellType.STRING) {
-                            val cellValue = cell.stringCellValue
-                            if (cell.stringCellValue.startsWith("#") ||
-                                cell.stringCellValue.contains("#") ||
-                                cell.stringCellValue!!.contentEquals("#")
-                            ) {
+                        if (cell != null && cell.cellType == CellType.NUMERIC) {
+                            val cellValue = cell.numericCellValue
+
+                            if (cellValue < 0) {
+
                                 val comment = sheet.createDrawingPatriarch().createCellComment(
                                     XSSFClientAnchor(
-                                        0, 0, 0, 0,
-                                        colIdx.toInt(), rowIdx, (colIdx + 1).toInt(), (rowIdx + 1)
+                                        0, 0, 0, 0, colIdx.toInt(), rowIdx, (colIdx + 1).toInt(), (rowIdx + 1)
                                     )
                                 )
-                                comment.string = XSSFRichTextString("Error: $cellValue")
+                                comment.string = XSSFRichTextString("Negative: $cellValue")
                                 cell.cellComment = comment
 
                                 val style = workbook.createCellStyle()
-                                style.fillForegroundColor = IndexedColors.LIGHT_GREEN.index
+                                style.fillForegroundColor = IndexedColors.YELLOW.index
                                 style.fillPattern = FillPatternType.SOLID_FOREGROUND
                                 cell.cellStyle = style
 
@@ -91,7 +88,7 @@ class ErrCellsK {
                     }
                 }
 
-                val outputStream = FileOutputStream("./src/main/java/output/KErrStr.xlsx")
+                val outputStream = FileOutputStream("./src/main/java/output/KNeg.xlsx")
                 workbook.write(outputStream)
 
                 workbook.close()
@@ -101,8 +98,9 @@ class ErrCellsK {
             } catch (e: IOException) {
                 val noFile = "File not found: \n$e"
                 logger.log(Level.ERROR, noFile)
+
             } catch (e: NullPointerException) {
-                val blank = "Blank Cell: \n$e"
+                val blank = "Blank cell: \n$e"
                 logger.log(Level.ERROR, blank)
             }
         }

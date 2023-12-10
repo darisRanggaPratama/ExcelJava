@@ -92,7 +92,7 @@ class ZeroCells {
                     }
                 }
 
-                val outputStream = FileOutputStream("./src/main/java/output/ZeroK.xlsx")
+                val outputStream = FileOutputStream("./src/main/java/output/KZero.xlsx")
                 workbook.write(outputStream)
 
                 workbook.close()

@@ -101,7 +101,7 @@ class DecCells {
                 }
 
                 // Save Excel file
-                val outputStream = FileOutputStream("./src/main/java/output/Dec.xlsx")
+                val outputStream = FileOutputStream("./src/main/java/output/KDec.xlsx")
                 workbook.write(outputStream)
 
                 // Close Excel file

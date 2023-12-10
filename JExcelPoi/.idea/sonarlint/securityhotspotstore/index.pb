@@ -35,3 +35,17 @@ Q
 !src/main/java/kotlins/StrCellK.kt,6\3\63e7878c281ae6f0e3b90f00cd5ce73dec26fae9
 R
 "src/main/java/kotlins/ZeroCells.kt,3\b\3b75ada4299ef9c449c65a9915dac48bc76c1ed8
+R
+"src/main/java/basic/ErrorCell.java,4\f\4ff17d72c2e560c6e2278a7a2eb44806dc4f2bf7
+S
+#src/main/java/basic/StringCell.java,c\b\cb57024404a12641734bfb8c6b9c250345e5997c
+P
+ src/main/java/kotlins/ErrCell.kt,3\8\385ab8903352e226d1e6924078b569a36033bc48
+S
+#src/main/java/kotlins/ErrorCells.kt,a\9\a95e994f878f4a76703f14e1439936b5417b1a2c
+V
+&src/main/java/kotlins/NegativeCells.kt,4\9\49469cdca06c5b6230c0c13095b7d9d58aa21ad1
+R
+"src/main/java/kotlins/NullCells.kt,7\4\740fe0a5ea1d7e1db63ad8d61f8b0363b194afa9
+P
+ src/main/java/kotlins/StrCell.kt,0\f\0f003b79e3e7da6edc228d26dfd9f2f966ea37f2

@@ -4,7 +4,6 @@ import basic.Data
 import org.apache.poi.ss.usermodel.CellType
 import org.apache.poi.ss.usermodel.FillPatternType
 import org.apache.poi.ss.usermodel.IndexedColors
-import org.apache.poi.ss.usermodel.Workbook
 import org.apache.poi.ss.util.CellReference
 import org.apache.poi.xssf.usermodel.XSSFClientAnchor
 import org.apache.poi.xssf.usermodel.XSSFRichTextString
@@ -12,14 +11,15 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
-
 import java.lang.System.getLogger
 import java.lang.System.Logger.Level
 
-class StrCellK {
+class ErrorCells {
     companion object {
-        private val logger = getLogger("StrCellK")
-        fun checkString() {
+        private val logger = getLogger("ErrorCells")
+
+        fun checkErrCells() {
+            // COLOR
             val BLUE = "\u001B[34m"
             val RESET = "\u001B[0m"
             val RED = "\u001B[31m"
@@ -32,11 +32,11 @@ class StrCellK {
                 val excelFilePath = path + Data.fileXl
 
                 val inputStream = FileInputStream(excelFilePath)
-                val workbook: Workbook = XSSFWorkbook(inputStream)
+                val workbook = XSSFWorkbook(inputStream)
                 val sheet = workbook.getSheet(Data.sheetXl)
+                val newSheet = workbook.createSheet("Err")
 
-                val newSheet = workbook.createSheet("Str")
-                println("$MAGENTA\nFound$RESET STRING: ")
+                println("$MAGENTA\nFound$RESET Error: ")
                 println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET)
 
                 val titleRow = newSheet.createRow(0)
@@ -45,10 +45,10 @@ class StrCellK {
                 val titleCell = titleRow.createCell(1)
                 titleCell.setCellValue("Cell")
                 val titleValue = titleRow.createCell(2)
-                titleValue.setCellValue("String")
+                titleValue.setCellValue("Error")
 
-                var rowIndex = 1
-                var no = 0
+                var rowIndex: Int = 1
+                var no: Int = 0
 
                 for (rowIdx in Data.beginRow..Data.endRow) {
                     val row = sheet.getRow(rowIdx)
@@ -57,41 +57,47 @@ class StrCellK {
 
                         if (cell != null && cell.cellType == CellType.STRING) {
                             val cellValue = cell.stringCellValue
-
-                            val comment = sheet.createDrawingPatriarch().createCellComment(
-                                XSSFClientAnchor(
-                                    0, 0, 0, 0, colIdx.toInt(), rowIdx, (colIdx + 1).toInt(), (rowIdx + 1)
+                            if (cell.stringCellValue.startsWith("#") ||
+                                cell.stringCellValue.contains("#") ||
+                                cell.stringCellValue!!.contentEquals("#")
+                            ) {
+                                val comment = sheet.createDrawingPatriarch().createCellComment(
+                                    XSSFClientAnchor(
+                                        0, 0, 0, 0,
+                                        colIdx.toInt(), rowIdx, (colIdx + 1).toInt(), (rowIdx + 1)
+                                    )
                                 )
-                            )
-                            comment.string = XSSFRichTextString("String: $cellValue")
-                            cell.cellComment = comment
+                                comment.string = XSSFRichTextString("Error: $cellValue")
+                                cell.cellComment = comment
 
-                            val style = workbook.createCellStyle()
-                            style.fillForegroundColor = IndexedColors.LIGHT_GREEN.index
-                            style.fillPattern = FillPatternType.SOLID_FOREGROUND
-                            cell.cellStyle = style
+                                val style = workbook.createCellStyle()
+                                style.fillForegroundColor = IndexedColors.LIGHT_GREEN.index
+                                style.fillPattern = FillPatternType.SOLID_FOREGROUND
+                                cell.cellStyle = style
 
-                            val newRow = newSheet.createRow(rowIndex++)
-                            val newNo = newRow.createCell(0)
-                            val newCellAddress = newRow.createCell(1)
-                            val newCellValue = newRow.createCell(2)
-                            val cellAddress = CellReference.convertNumToColString(colIdx) + (rowIdx + 1)
+                                val newRow = newSheet.createRow(rowIndex++)
+                                val newNo = newRow.createCell(0)
+                                val newCellAddress = newRow.createCell(1)
+                                val newCellValue = newRow.createCell(2)
+                                val cellAddress = CellReference.convertNumToColString(colIdx) + (rowIdx + 1)
 
-                            no++
-                            newNo.setCellValue(no.toDouble())
-                            newCellAddress.setCellValue(cellAddress)
-                            newCellValue.setCellValue(cellValue)
-                            println("$no$RESET $BLUE$cellAddress: $RESET$RED$cellValue$RESET")
+                                no++
+                                newNo.setCellValue(no.toDouble())
+                                newCellAddress.setCellValue(cellAddress)
+                                newCellValue.setCellValue(cellValue)
+                                println("$no$RESET $BLUE$cellAddress: $RESET$RED$cellValue$RESET")
+                            }
                         }
                     }
                 }
 
-                val outputStream = FileOutputStream("./src/main/java/output/Str.xlsx")
+                val outputStream = FileOutputStream("./src/main/java/output/KErrStr.xlsx")
                 workbook.write(outputStream)
 
                 workbook.close()
                 inputStream.close()
                 outputStream.close()
+
             } catch (e: IOException) {
                 val noFile = "File not found: \n$e"
                 logger.log(Level.ERROR, noFile)
@@ -102,6 +108,3 @@ class StrCellK {
         }
     }
 }
-
-
-

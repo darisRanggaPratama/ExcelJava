@@ -1,20 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8ÈŽÞþÁ1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8ÉŽÞþÁ1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÅÚ¢ûÿÿÿÿ8ÉŽÞþÁ1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68ÉŽÞþÁ1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68ÉŽÞþÁ1
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¯á68ÉŽÞþÁ1
-l
-java:S2095'"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ø„›Žþÿÿÿÿ8£“ÞþÁ1
-W
-java:S1118":Add a private constructor to hide the implicit public one.(“Ùˆµ8¨“ÞþÁ1
-d
-java:S1659"BDeclare "RESET" and all following declarations on a separate line.(ðÅÚ¢ûÿÿÿÿ8º“ÞþÁ1
-_
-java:S1659"CDeclare "YELLOW" and all following declarations on a separate line.(×¯á68º“ÞþÁ1
-B
-java:S1659<" Declare "no" on a separate line.(²ò•œøÿÿÿÿ8¼“ÞþÁ1
-G	java:S1060"+Replace this use of System.out by a logger.(îÕˆ£8Ö“ÞþÁ1
-L	java:S1061"+Replace this use of System.out by a logger.(Ðû²Úýÿÿÿÿ8×“ÞþÁ1
-L	java:S106^"+Replace this use of System.out by a logger.(¬ÑìÎýÿÿÿÿ8æ“ÞþÁ1

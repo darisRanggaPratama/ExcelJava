@@ -1,0 +1,122 @@
+package basic;
+
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellReference;
+import org.apache.poi.xssf.usermodel.XSSFClientAnchor;
+import org.apache.poi.xssf.usermodel.XSSFRichTextString;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.lang.System.Logger;
+import java.lang.System.Logger.Level;
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class DecimalCell {
+    // Show output log
+    private static final Logger logger = System.getLogger("DecimalCell");
+    private static Map<String, Double> map = new HashMap<>();
+    public static void checkDecimal() {
+        // COLOR
+        String BLUE = "\u001B[34m", RESET = "\u001B[0m", RED = "\u001B[31m";
+        String MAGENTA = "\u001B[45m", YELLOW = "\u001B[43m", CYAN = "\u001B[46m";
+
+        try {
+            // Get Excel file path
+            String path = "./src/main/java/trial/";
+            String excelFilePath = path + Data.fileXl;
+
+            // Open file
+            FileInputStream inputStream = new FileInputStream(excelFilePath);
+            Workbook workbook = new XSSFWorkbook(inputStream);
+
+            // Get worksheet (GAJI)
+            Sheet sheet = workbook.getSheet(Data.sheetXl);
+
+            // Create worksheet
+            Sheet newSheet = workbook.createSheet("DEC");
+
+            System.out.println(MAGENTA + "\nFound" + RESET + " DECIMAL: ");
+            System.out.println(YELLOW + " Cell " + RESET + CYAN + "Value" + RESET);
+
+            // Cell to place title
+            Row titleRow = newSheet.createRow(0);
+            Cell titleNo = titleRow.createCell(0);
+            titleNo.setCellValue("No");
+            Cell titleCell = titleRow.createCell(1);
+            titleCell.setCellValue("Cell");
+            Cell titleValue = titleRow.createCell(2);
+            titleValue.setCellValue("Decimal");
+
+            int rowIndex = 1, no = 0;
+            for (int rowIdx = Data.beginRow; rowIdx <= Data.endRow; rowIdx++) {
+                Row row = sheet.getRow(rowIdx);
+                for (int colIdx = Data.firstColumn; colIdx <= Data.lastColumn; colIdx++) {
+                    Cell cell = row.getCell(colIdx);
+
+                    // Check Decimal Value
+                    if (cell != null && cell.getCellType() == CellType.NUMERIC) {
+                        double cellValue = cell.getNumericCellValue();
+                        int intValue = (int) cellValue;
+                        if (cellValue != intValue) {
+
+                            // Put comment/ note in cell
+                            Comment comment = sheet.createDrawingPatriarch().createCellComment(
+                                    new XSSFClientAnchor(0, 0, 0, 0,
+                                            (short) colIdx, rowIdx, (short) (colIdx + 1), rowIdx + 1));
+                            comment.setString(new XSSFRichTextString("Decimal: " + cellValue));
+                            cell.setCellComment(comment);
+
+                            // Coloring cell
+                            CellStyle style = workbook.createCellStyle();
+                            style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());
+                            style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+                            cell.setCellStyle(style);
+
+                            Row newRow = newSheet.createRow(rowIndex++);
+                            Cell newNo = newRow.createCell(0);
+                            Cell newCellAddress = newRow.createCell(1);
+                            Cell newCellValue = newRow.createCell(2);
+
+                            String cellAddress = CellReference.convertNumToColString(colIdx) + (rowIdx + 1);
+                            no++;
+                            newNo.setCellValue(no);
+                            newCellAddress.setCellValue(cellAddress);
+                            newCellValue.setCellValue(cellValue);
+
+                            map.put(cellAddress, cellValue);
+                        }
+                    }
+                }
+            }
+
+            int x = 0;
+            for (Map.Entry<String, Double> entry: map.entrySet()){
+                x++;
+                System.out.println(x + RESET + " " + BLUE + entry.getKey() + RESET + ": " + RED + entry.getValue() + RESET);
+            }
+
+            // Save Excel file
+            String outFile = Data.sheetXl + "_Dec.xlsx";
+            String outPath = "./src/main/java/output/"+outFile;
+            System.out.println("\nOutput:\n" + outPath);
+
+            FileOutputStream outputStream = new FileOutputStream(outPath);
+            workbook.write(outputStream);
+
+            // Close Excel file
+            workbook.close();
+            inputStream.close();
+            outputStream.close();
+        } catch (IOException e) {
+            String noFile = "File not found: \n" + e;
+            logger.log(Level.ERROR, noFile);
+        } catch (NullPointerException e) {
+            String blank = "Blank Cell: \n" + e;
+            logger.log(Level.ERROR, blank);
+        }
+    }
+}

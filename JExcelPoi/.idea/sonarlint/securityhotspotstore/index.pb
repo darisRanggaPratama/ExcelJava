@@ -5,34 +5,18 @@ U
 %src/main/java/basic/NegativeCell.java,6\9\69918d1aafed03571fde12ce8fe7b4220612843b
 T
 $src/main/java/basic/DecimalCell.java,1\0\100e2607afd2fd168a473dd369e4f8545ff183b9
-P
- src/main/java/basic/ErrCell.java,e\a\ea6d3d75cd88e9d00010f6b19393f0f03e8ec5ae
 Q
 !src/main/java/basic/ErrCells.java,8\3\837ef120dc28de6cbde2366ed1cd1240bf3b0b9e
 Q
 !src/main/java/basic/ZeroCell.java,f\8\f844a0b2f83a3b49eb28bb1f264bdb7d67ba75d2
 Q
 !src/main/java/basic/NullCell.java,4\7\472775a9eb4a7b0ec0b157686951302d9f127462
-P
- src/main/java/basic/StrCell.java,1\7\17ccb8dc05a66e8ec7dac19fea2aa94590b41eea
 M
 src/main/java/basic/Main.java,0\1\01a7a3f8e76d8825a9386fd826fbb9274939d2e0
 M
 src/main/java/basic/Data.java,1\3\13f4b3090b7c338a1330c7724ddea96fd414df66
 Q
 !src/main/java/kotlins/DecCells.kt,7\1\710c5d19c977ff858670e82b0c47666bd0fa88be
-Q
-!src/main/java/kotlins/ErrCellK.kt,9\2\922c341ea2ca2b7632b626e93acb6b6a1b854e9a
-P
- src/main/java/kotlins/scratch.kt,c\5\c584456b332acd2dac103768ec549f61649b2a8f
-R
-"src/main/java/kotlins/ErrCellsK.kt,7\9\795d0006f2573c03836cc46659a0ea6c16981dc6
-V
-&src/main/java/kotlins/NegativeCellK.kt,2\0\2018f4c7ddfee1b9c8666fcc7972ecb32f05e0d3
-Q
-!src/main/java/kotlins/NullCell.kt,9\b\9b4d5660122ce9513600dcd54df4c0222e1ea01c
-Q
-!src/main/java/kotlins/StrCellK.kt,6\3\63e7878c281ae6f0e3b90f00cd5ce73dec26fae9
 R
 "src/main/java/kotlins/ZeroCells.kt,3\b\3b75ada4299ef9c449c65a9915dac48bc76c1ed8
 R

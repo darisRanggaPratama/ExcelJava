@@ -7,13 +7,13 @@ public class Main {
         Data.inputData();
 
         // JAVA
-        ZeroCell.checkZero();
-        ErrCells.checkErrCells();
-        ErrorCell.checkErrCell();
-        StringCell.checkString();
-        NegativeCell.checkNegative();
-        NullCell.checkNull();
-        DecimalCell.checkDecimal();
+//        ZeroCell.checkZero();
+//        ErrCells.checkErrCells();
+//        ErrorCell.checkErrCell();
+//        StringCell.checkString();
+//        NegativeCell.checkNegative();
+//        NullCell.checkNull();
+//        DecimalCell.checkDecimal();
 
         // KOTLIN
         ZeroCells.Companion.checkZero();

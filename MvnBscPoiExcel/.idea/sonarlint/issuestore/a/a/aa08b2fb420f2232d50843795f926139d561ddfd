@@ -1,8 +1,16 @@
 
 g
-java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ó×Œ¬8™ Ó¹Ê1
-U
-java:S1854"8Remove this useless assignment to local variable "cell".(êêÙ„8ŞÜÒ¹Ê1
-
-java:S1130
-"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8œ Ó¹Ê1
+java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ó×Œ¬8ÔÒİ¢Î1
+M
+java:S1905/"+Remove this unnecessary cast to "XSSFCell".(Ëˆ¿ÿÿÿÿÿ8ºÊÔ¢Î1
+H
+java:S1905:"+Remove this unnecessary cast to "XSSFCell".(¯ïÃ“8¼ÊÔ¢Î1
+H
+java:S1905E"+Remove this unnecessary cast to "XSSFCell".(Äú™ø8½ÊÔ¢Î1
+M
+java:S1905Q"+Remove this unnecessary cast to "XSSFCell".(üê‘…ÿÿÿÿÿ8ÀÊÔ¢Î1
+M
+java:S1905a"+Remove this unnecessary cast to "XSSFCell".(üê‘…ÿÿÿÿÿ8ÃÊÔ¢Î1
+M
+java:S1905l"+Remove this unnecessary cast to "XSSFCell".(üê‘…ÿÿÿÿÿ8ÅÊÔ¢Î1
+G	java:S106w"+Replace this use of System.out by a logger.(¢Õó¸8úÖ¢Î1

@@ -1,12 +1,0 @@
-
-g
-java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Ó×Œ¬8º„–±Ê1
-B
-java:S1905"&Remove this unnecessary cast to "int".(‘¯®B8ö¥±Ê1
-C
-java:S1905"&Remove this unnecessary cast to "int".(ìë’å8÷¥±Ê1
-H
-java:S1905"&Remove this unnecessary cast to "int".(©ò‚Äúÿÿÿÿ8ø¥±Ê1
-C
-java:S1905 "&Remove this unnecessary cast to "int".(À‹ô“8ù¥±Ê1
-G	java:S106'"+Replace this use of System.out by a logger.(Üİù‚8•¦±Ê1

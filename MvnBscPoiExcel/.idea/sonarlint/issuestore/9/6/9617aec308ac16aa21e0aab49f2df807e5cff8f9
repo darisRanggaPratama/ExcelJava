@@ -1,10 +1,10 @@
 
 m
 java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(óëÕŠùÿÿÿÿ8õ´ì©É1
-j
-java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Õ§¬‡8¯µì©É1
 g
 java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(½ÕÞ„8¯µì©É1
+j
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Õ§¬‡8¯µì©É1
 z	java:S131"YComplete cases by adding the missing enum constants or add a default case to this switch.(óëÕŠùÿÿÿÿ8Æµì©É1
 G	java:S106"+Replace this use of System.out by a logger.(½Ú¢¤8Çµì©É1
 L	java:S106""+Replace this use of System.out by a logger.(¬¼Ÿëüÿÿÿÿ8Èµì©É1

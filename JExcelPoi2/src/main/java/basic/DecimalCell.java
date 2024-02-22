@@ -67,7 +67,7 @@ public class DecimalCell {
                     // Check Decimal Value
                     if (cell != null && cell.getCellType() == CellType.NUMERIC) {
                         double cellValue = cell.getNumericCellValue();
-                        int intValue = (int) cellValue;
+                        long intValue = (long) cellValue;
                         if (cellValue != intValue) {
 
                             // Put comment/ note in cell

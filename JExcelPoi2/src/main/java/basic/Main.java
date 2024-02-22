@@ -8,13 +8,13 @@ public class Main {
         Data.inputData();
 
         // JAVA
-        ZeroCell.checkZero();
+        NegativeCell.checkNegative();
+        DecimalCell.checkDecimal();
         ErrCells.checkErrCells();
         ErrorCell.checkErrCell();
         StringCell.checkString();
-        NegativeCell.checkNegative();
         NullCell.checkNull();
-        DecimalCell.checkDecimal();
+        ZeroCell.checkZero();
 
         // KOTLIN
 //        ZeroCells.Companion.checkZero();

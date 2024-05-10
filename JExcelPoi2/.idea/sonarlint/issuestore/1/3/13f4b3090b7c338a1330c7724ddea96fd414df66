@@ -1,36 +1,36 @@
 
+•
+java:S1104"RMake fileXl a static final constant or non-public and provide accessors if needed.(ü¸ÈŠ8¯ˆ¡ Á1J$fd63fe55-b5ea-40fc-9cc3-7f60e83e99f2
+–
+java:S1104"SMake sheetXl a static final constant or non-public and provide accessors if needed.(ü¸ÈŠ8°ˆ¡ Á1J$519ba5c0-3020-4190-9db6-e0108005e3d3
+œ
+java:S1104"TMake beginRow a static final constant or non-public and provide accessors if needed.(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1J$ea666191-82db-4461-baff-cf7ab2409f57
+š
+java:S1104"RMake endRow a static final constant or non-public and provide accessors if needed.(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1J$7d16d90d-65f6-4851-90fa-b0e39938b39d
+Ÿ
+java:S1104"WMake firstColumn a static final constant or non-public and provide accessors if needed.(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1J$a255ee46-eb2c-4846-990a-03cbdef954aa
+ž
+java:S1104"VMake lastColumn a static final constant or non-public and provide accessors if needed.(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1J$d4abd6d9-7b4f-47a5-b858-aeeeb42224dc
+˜
+java:S1104"PMake scan a static final constant or non-public and provide accessors if needed.(ÇèðÊùÿÿÿÿ8°ˆ¡ Á1J$ae73844c-0dba-402f-9795-8af57b8aa780
 o
-java:S1104"RMake fileXl a static final constant or non-public and provide accessors if needed.(ü¸ÈŠ8¯ˆ¡ Á1
+java:S1444",Make this "public static fileXl" field final(ü¸ÈŠ8°ˆ¡ Á1J$3573cb34-af58-474d-bc20-82fb46831300
 p
-java:S1104"SMake sheetXl a static final constant or non-public and provide accessors if needed.(ü¸ÈŠ8°ˆ¡ Á1
+java:S1444"-Make this "public static sheetXl" field final(ü¸ÈŠ8°ˆ¡ Á1J$c2618f4e-4b96-4ef7-bf56-f5af0b80fb06
 v
-java:S1104"TMake beginRow a static final constant or non-public and provide accessors if needed.(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1
+java:S1444".Make this "public static beginRow" field final(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1J$6b699d70-6e7c-42d4-ba2b-0fac4ada9158
 t
-java:S1104"RMake endRow a static final constant or non-public and provide accessors if needed.(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1
+java:S1444",Make this "public static endRow" field final(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1J$a2405083-90fd-46f3-a90e-b3054bf66012
 y
-java:S1104"WMake firstColumn a static final constant or non-public and provide accessors if needed.(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1
+java:S1444"1Make this "public static firstColumn" field final(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1J$3389fc16-5233-4d2e-ae96-d08383332ada
 x
-java:S1104"VMake lastColumn a static final constant or non-public and provide accessors if needed.(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1
+java:S1444"0Make this "public static lastColumn" field final(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1J$51f28119-685b-4f69-b2c2-cc399c8fdc1f
 r
-java:S1104"PMake scan a static final constant or non-public and provide accessors if needed.(ÇèðÊùÿÿÿÿ8°ˆ¡ Á1
-I
-java:S1444",Make this "public static fileXl" field final(ü¸ÈŠ8°ˆ¡ Á1
-J
-java:S1444"-Make this "public static sheetXl" field final(ü¸ÈŠ8°ˆ¡ Á1
-P
-java:S1444".Make this "public static beginRow" field final(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1
-N
-java:S1444",Make this "public static endRow" field final(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1
-S
-java:S1444"1Make this "public static firstColumn" field final(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1
-R
-java:S1444"0Make this "public static lastColumn" field final(Æ‹˜÷ùÿÿÿÿ8°ˆ¡ Á1
-L
-java:S1444"*Make this "public static scan" field final(ÇèðÊùÿÿÿÿ8°ˆ¡ Á1
-B
-java:S1659"%Declare "sheetXl" on a separate line.(ü¸ÈŠ8ˆõ¢ Á1
-e
-java:S1659"CDeclare "endRow" and all following declarations on a separate line.(Æ‹˜÷ùÿÿÿÿ8ê­¤ Á1
-W
-java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰8¼ˆ¡ Á1
-F	java:S106"+Replace this use of System.out by a logger.(ƒÚáB8Âˆ¡ Á1
+java:S1444"*Make this "public static scan" field final(ÇèðÊùÿÿÿÿ8°ˆ¡ Á1J$b2fcf70b-2511-440f-8a05-d5ac0d378281
+h
+java:S1659"%Declare "sheetXl" on a separate line.(ü¸ÈŠ8ˆõ¢ Á1J$43a5c258-2c5b-4130-b046-2fcaa27e994f
+‹
+java:S1659"CDeclare "endRow" and all following declarations on a separate line.(Æ‹˜÷ùÿÿÿÿ8ê­¤ Á1J$372ee353-0732-4625-8f77-bf7cd9b85057
+}
+java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰8¼ˆ¡ Á1J$64be0485-55e5-46dd-a701-0c584900fceb
+l	java:S106"+Replace this use of System.out by a logger.(ƒÚáB8Âˆ¡ Á1J$6dc0ba37-5232-45bc-99fd-ae0bd2a0edaa

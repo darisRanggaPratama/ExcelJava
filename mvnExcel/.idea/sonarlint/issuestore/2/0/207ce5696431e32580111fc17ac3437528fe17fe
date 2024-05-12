@@ -1,0 +1,9 @@
+
+“
+java:S1301&"KReplace this "switch" statement by "if" statements to increase readability.(óëÕŠùÿÿÿÿ8Ÿ½µö1J$aa7f1443-2ad7-4de6-85fc-f5df0e979c10
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùÃË úÿÿÿÿ8¤½µö1J$4a37f35a-895e-49f4-9c1e-9b5b4b629983
+}
+java:S1118":Add a private constructor to hide the implicit public one.(ÊìëÚ8¾µö1J$d33b4113-a0a4-4597-b266-b8f952d8b156
+r	java:S106("+Replace this use of System.out by a logger.(¬¼Ÿëüÿÿÿÿ8«¾µö1J$b3f47818-4cd9-4e7d-9527-2abfb91f5320
+m	java:S106+"+Replace this use of System.out by a logger.(½Ú¢¤8Û«ºö1J$74963a59-67a7-4c60-a6a5-ecd7eda1d55c
+r	java:S106/"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8Ü«ºö1J$5f7b8aa6-37e0-4ed7-af71-5ca841c6d1b4

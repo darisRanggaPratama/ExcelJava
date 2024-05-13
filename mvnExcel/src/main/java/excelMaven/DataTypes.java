@@ -18,7 +18,7 @@ public class DataTypes {
     static File file;
     static String txtInfo;
 
-    public static void ExcelData(){
+    public static void excelData(){
         try{
             workbook = new XSSFWorkbook();
             worksheet = workbook.createSheet("Data Type");

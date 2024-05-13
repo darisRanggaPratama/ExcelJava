@@ -12,8 +12,10 @@ public class App
            // CheckExistFile.openExistWorkbook();
             // CreateSpreadsheet.createWorksheet();
            // ReadSpreadsheet.readWorksheet();
-          //  DataTypes.ExcelData();
-            CellStyles.styledCell();
+          //  DataTypes.excelData();
+           // CellStyles.styledCell();
+           // FontStyles.styledFont();
+            TextDirection.direction();
         } catch (Exception e){
             String noFile = "Fail: \n" + e;
             logger.log(System.Logger.Level.ERROR, noFile);

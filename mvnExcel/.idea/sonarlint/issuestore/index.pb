@@ -17,3 +17,7 @@ W
 'src/main/java/excelMaven/DataTypes.java,4\c\4c51b2a79746d627e66cb28954ddba5560bb0254
 X
 (src/main/java/excelMaven/CellStyles.java,6\5\65841a67763fd70ab4a3beb37b7d5e84830fb3e1
+X
+(src/main/java/excelMaven/FontStyles.java,3\f\3fc2f914f7421e58ac8ae7c454de0aa18cb52050
+[
++src/main/java/excelMaven/TextDirection.java,e\6\e60229610e01e559368318de90173df2ebe72d56

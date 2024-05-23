@@ -66,7 +66,7 @@ public class TextDirection {
             cell.setCellValue("360 Degree angle");
             cell.setCellStyle(styles);
 
-            file = new File("./src/main/java/checking/textDirection.xlsx");
+            file = new File("./src/main/java/checking/TextDirection.xlsx");
             out = new FileOutputStream(file);
             wbook.write(out);
             out.close();

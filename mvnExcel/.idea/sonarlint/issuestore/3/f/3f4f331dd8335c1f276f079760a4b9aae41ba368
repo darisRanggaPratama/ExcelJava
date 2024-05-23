@@ -1,0 +1,8 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùÃË úÿÿÿÿ8»±éÂø1J$301cdf89-f292-4ff9-8aa4-2a2724cb3937
+}
+java:S1118
+":Add a private constructor to hide the implicit public one.(šÒ³Ò8â±éÂø1J$84a7dac3-f4b1-4955-a374-3b354dceba95
+•
+java:S3252 "SUse static access with "org.apache.poi.ss.usermodel.PrintSetup" for "A4_PAPERSIZE".(¦Ìá68ü±éÂø1J$a80cd2ea-5be5-4298-a310-b5f2b35c4bbb
+m	java:S106,"+Replace this use of System.out by a logger.(ê¸öë8ÍİêÂø1J$13864ea7-e0e4-41f6-8e53-e2ba22740cfc

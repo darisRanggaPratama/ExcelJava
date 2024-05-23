@@ -1,0 +1,10 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(åÛêÖüÿÿÿÿ8®¹…æù1
+d
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Ò±­]8¿¹…æù1
+g
+java:S1659
+"EDeclare "username" and all following declarations on a separate line.(„†Ëèýÿÿÿÿ8Â¹…æù1
+G	java:S106"+Replace this use of System.out by a logger.(š»õý8Ì¹…æù1
+M
+java:S5960"+Remove this assertion from production code.(Ðäãîýÿÿÿÿ8Î¹…æù1

@@ -1,18 +1,6 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùÃË úÿÿÿÿ8˜ğ×ö1J$03d2b8bf-c099-49a4-b791-7d8e3b226ac3
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùÃË úÿÿÿÿ8˜ğ×ö1J$159e1fda-e011-46d3-bb96-ed39f90f460b
 ‚
-java:S1118":Add a private constructor to hide the implicit public one.(ùÑÓÀıÿÿÿÿ8«ğ×ö1J$b45c1ed8-203b-4c38-90f9-6ee034b63303
-‰
-java:S1659"ADeclare "name" and all following declarations on a separate line.(à‘€Ğøÿÿÿÿ8¯ğ×ö1J$d39cd615-7118-4222-a1cf-a2af2db27d85
+java:S1118":Add a private constructor to hide the implicit public one.(ùÑÓÀıÿÿÿÿ8«ğ×ö1J$54e7ac9c-b714-4817-97c7-5f7d83bf8719
 g
-java:S1659("$Declare "cellID" on a separate line.(ºÚ­8°ğ×ö1J$5be2f07d-866b-4fbc-8335-3288b174869b
-o
-java:S1481"'Remove this unused "id" local variable.(à‘€Ğøÿÿÿÿ8ÀŸèö1J$dca1fb4d-8217-4ae8-a6f6-4494542cf6c6
-q
-java:S1481")Remove this unused "name" local variable.(à‘€Ğøÿÿÿÿ8ÁŸèö1J$31d77921-a8d7-4602-ac6c-5048aa79be60
-p
-java:S1481"(Remove this unused "job" local variable.(à‘€Ğøÿÿÿÿ8ÃŸèö1J$620b9345-a332-49b6-8969-9e2ec8e7ee70
-r
-java:S1481"*Remove this unused "title" local variable.(à‘€Ğøÿÿÿÿ8ÅŸèö1J$9234e1b6-0042-44e5-8a50-52aa3824c573
-p
-java:S1481"(Remove this unused "age" local variable.(§¥Êüÿÿÿÿ8ÆŸèö1J$4c004b20-4464-468e-8909-e352bcc6cfae
+java:S1659%"$Declare "cellID" on a separate line.(ºÚ­8°ğ×ö1J$748e689f-dfcd-436c-9516-9bb83ec93968

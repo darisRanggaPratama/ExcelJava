@@ -10,12 +10,16 @@ public class App
         try{
            // CreateBlankWorkbook.blankWorkbook();
            // CheckExistFile.openExistWorkbook();
-            // CreateSpreadsheet.createWorksheet();
+          //   CreateSpreadsheet.createWorksheet();
            // ReadSpreadsheet.readWorksheet();
           //  DataTypes.excelData();
            // CellStyles.styledCell();
            // FontStyles.styledFont();
-            TextDirection.direction();
+           // TextDirection.direction();
+          //  Formula.calculate();
+          //  Hyperlink.linkCreated();
+          //  PrintArea.printing();
+            DatabaseExport.ExcelResult();
         } catch (Exception e){
             String noFile = "Fail: \n" + e;
             logger.log(System.Logger.Level.ERROR, noFile);

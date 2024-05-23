@@ -11,8 +11,6 @@ _
 /src/main/java/excelMaven/CreateSpreadsheet.java,0\0\00d12e8039024139c6fd8653e663d176cb17d412
 ]
 -src/main/java/excelMaven/ReadSpreadsheet.java,2\0\207ce5696431e32580111fc17ac3437528fe17fe
-T
-$src/main/java/excelMaven/Person.java,5\2\5212821e9c60b0b91d63d4873109468be1f89cf1
 W
 'src/main/java/excelMaven/DataTypes.java,4\c\4c51b2a79746d627e66cb28954ddba5560bb0254
 X
@@ -21,3 +19,13 @@ X
 (src/main/java/excelMaven/FontStyles.java,3\f\3fc2f914f7421e58ac8ae7c454de0aa18cb52050
 [
 +src/main/java/excelMaven/TextDirection.java,e\6\e60229610e01e559368318de90173df2ebe72d56
+U
+%src/main/java/excelMaven/Formula.java,c\0\c05524a3d8ff3ede665cf0db8548860c089ed69c
+W
+'src/main/java/excelMaven/Hyperlink.java,6\6\6651bd6eeb59fb0c34bb5d90aeb601d2bc707ba3
+W
+'src/main/java/excelMaven/PrintArea.java,3\f\3f4f331dd8335c1f276f079760a4b9aae41ba368
+\
+,src/main/java/excelMaven/DatabaseExport.java,a\0\a0688bb1f538065ba7af2d0e8de43703637265bb
+]
+-src/main/java/excelMaven/DatabaseConnect.java,a\f\af4121202ebe7fc99d481bb9a0d857b778d2f791

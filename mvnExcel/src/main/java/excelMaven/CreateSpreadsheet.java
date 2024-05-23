@@ -7,7 +7,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -26,8 +25,6 @@ public class CreateSpreadsheet {
             workbook = new XSSFWorkbook();
             worksheet = workbook.createSheet("Person Data");
             Map<String, Object[]> info = new TreeMap<>();
-            ArrayList<String> id, name, job, title;
-            ArrayList<Integer> age;
 
             info.put("1", new Object[]{"ID", "Name", "Job", "Age"});
             info.put("2", new Object[]{"01", "Eren", "HRD", "23"});

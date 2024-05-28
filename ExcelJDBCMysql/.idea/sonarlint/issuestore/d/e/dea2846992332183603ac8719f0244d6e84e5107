@@ -1,9 +1,7 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûó¡Öýÿÿÿÿ8ûå£Õû1J$c93767e7-b32d-4fab-afeb-82deaf72be27
-‹
-java:S1130"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(±é¿›8þÎŽ×û1
-‰
-java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(±é¿›8ÿÎŽ×û1
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(ŸªÂØüÿÿÿÿ8ÿå£Õû1J$6be15426-5b7b-4cff-8441-a16c38e452cc
-[
-java:S1128"9Remove this unused import 'SqlExcel.LearnSQL.ExportData'.(úø¢öøÿÿÿÿ8ƒÏŽ×û1
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûó¡Öýÿÿÿÿ8üöÅñû1J$e3db4639-aae2-4103-9bfc-d3a8f10eb819
+~	java:S125"<This block of commented-out lines of code should be removed.(²öˆå8›À°ôû1J$29f0a68a-a8b2-4fcd-9625-59e62c418382
+Z
+java:S1128"8Remove this unused import 'SqlExcel.LearnSQL.ImportCSV'.(ËÑÉîüÿÿÿÿ8ÞÐ²ôû1
+|
+java:S1128"9Remove this unused import 'SqlExcel.LearnSQL.ImportData'.(”¿æÜ8À°ôû1J$8e3a938a-2d5e-4117-a3d0-8b0b352ead05

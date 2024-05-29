@@ -1,12 +1,12 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛãòÕúÿÿÿÿ8Ä³¬óû1J$291ae2f6-7183-4b7c-9b71-b6eb209efe43
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛãòÕúÿÿÿÿ8Ä³¬óû1J$1f3456ad-1496-465f-907f-3e24e8e336f1
 ƒ
-java:S1659"@Declare "sql" and all following declarations on a separate line.(ï êæ8·µ¬óû1J$c665d0e3-7170-428b-b038-a83b2ea59990
+java:S1659"@Declare "sql" and all following declarations on a separate line.(ï êæ8·µ¬óû1J$c86fabe3-1785-4ca1-8b62-fa297cebb0e3
 o
-java:S1659"'Declare "batchSize" on a separate line.(€‰Œøÿÿÿÿ8·µ¬óû1J$7eb30004-7f5f-497b-ae59-4467fef255ea
+java:S1659"'Declare "batchSize" on a separate line.(€‰Œøÿÿÿÿ8·µ¬óû1J$577a27e0-4946-4716-bd5a-fbbb29de76c7
 ‚
-java:S1118":Add a private constructor to hide the implicit public one.(êêÎğşÿÿÿÿ8ºµ¬óû1J$4653d8bd-5a93-4e25-8456-05aa1699083a
+java:S1118":Add a private constructor to hide the implicit public one.(êêÎğşÿÿÿÿ8ºµ¬óû1J$a6d95770-e54f-442d-b8e5-7c737657725e
 ”
-java:S2677#"LUse or store the value returned from "readLine" instead of throwing it away.(˜»ƒ»şÿÿÿÿ8Àµ¬óû1J$930e9184-29e4-41f9-9275-222abc898b14
-r	java:S1069"+Replace this use of System.out by a logger.(šº‘¶üÿÿÿÿ8Çµ¬óû1J$0d32de30-dca2-473d-b73e-50089c67812b
-r	java:S106<"+Replace this use of System.out by a logger.(¹­’­üÿÿÿÿ8¹¢”ôû1J$484bb9c7-d247-4cde-bdf1-4c8582fa1b4f
+java:S2677#"LUse or store the value returned from "readLine" instead of throwing it away.(˜»ƒ»şÿÿÿÿ8Àµ¬óû1J$1cc2c269-582b-4c6a-9a16-be1732a96548
+r	java:S1069"+Replace this use of System.out by a logger.(šº‘¶üÿÿÿÿ8Çµ¬óû1J$a134fb85-ec67-487c-8464-b1b7d465a3d3
+r	java:S106<"+Replace this use of System.out by a logger.(¹­’­üÿÿÿÿ8¹¢”ôû1J$0b0bdca7-7b44-4fea-bbb1-1a0d24adcbae

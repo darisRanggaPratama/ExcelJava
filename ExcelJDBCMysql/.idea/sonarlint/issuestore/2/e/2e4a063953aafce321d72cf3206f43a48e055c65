@@ -1,10 +1,10 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛãòÕúÿÿÿÿ8ğÓÖû1J$f5dc4e05-d858-4dcd-b0d2-b47115ac4a8c
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛãòÕúÿÿÿÿ8ğÓÖû1J$44abe91f-79c0-46e1-aa28-df4e75f79a9c
 z
-java:S2589+"7Remove this expression which always evaluates to "true"(¨«ÜØ8Š“ÓÖû1J$e6412dbc-ac39-4629-a9c2-f66c70684cfd
+java:S2589+"7Remove this expression which always evaluates to "true"(¨«ÜØ8Š“ÓÖû1J$c6d3dfcf-8f4f-40ee-889e-6b78c90725af
 ‚
-java:S1659"?Declare "id" and all following declarations on a separate line.(×ÒÕ8“ÓÖû1J$f64cdf8a-a304-4cbe-8084-450fc21ded1b
+java:S1659"?Declare "id" and all following declarations on a separate line.(×ÒÕ8“ÓÖû1J$29dda8b6-9769-4075-ad5a-fa4ac1520a57
 }
-java:S1118":Add a private constructor to hide the implicit public one.(ùõşã8“ÓÖû1J$c304b4c0-caf8-4f74-882d-1036912e2e94
-r	java:S1065"+Replace this use of System.out by a logger.(òÿ¥­şÿÿÿÿ8§éˆ×û1J$4801a617-7196-4189-bdca-48c2b66b2523
-r	java:S1068"+Replace this use of System.out by a logger.(¹­’­üÿÿÿÿ8§éˆ×û1J$04916d7b-7a0b-456c-bcbf-43089cfa6ca8
+java:S1118":Add a private constructor to hide the implicit public one.(ùõşã8“ÓÖû1J$47a8cfd7-60a0-4b7d-9b7e-ae4ce3a4db1e
+r	java:S1065"+Replace this use of System.out by a logger.(òÿ¥­şÿÿÿÿ8§éˆ×û1J$c9be8044-b81a-4c41-86a7-1139f62f4df1
+r	java:S1068"+Replace this use of System.out by a logger.(¹­’­üÿÿÿÿ8§éˆ×û1J$2969c7a8-ae0e-4621-810e-68a0b65db410

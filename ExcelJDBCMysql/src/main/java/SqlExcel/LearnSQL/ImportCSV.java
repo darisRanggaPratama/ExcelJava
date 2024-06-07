@@ -37,8 +37,8 @@ public class ImportCSV {
             while ((text = buffRead.readLine()) != null) {
                 data = text.split(";");
                 id = data[0];
-                name = data[1];
-                email = data[2];
+                name = data[2];
+                email = data[1];
 
                 preState.setString(1, id);
                 preState.setString(2, name);

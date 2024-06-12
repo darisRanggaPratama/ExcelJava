@@ -9,7 +9,10 @@ import java.io.IOException;
 public class BasicPOI {
 
     public static void main(String[] args) throws IOException {
-       // ReadingExcel.readFile();
-       ReadExcel.readFile();
+        IteratorTest.createList();
+        IteratorTest.removeItem();
+        // ReadingExcel.readFile();
+        // ReadExcel.readFile();
+        // WriteExcel.createFile();
     }
 }
